@@ -1,0 +1,932 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode a,
+body.dark-mode ul,
+body.dark-mode li,
+body.dark-mode p,
+body.dark-mode span {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 40%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo img {
+  width: 100%;
+}
+header .logoAndSearch .search {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .search .btn {
+  width: 60%;
+  min-height: 50px;
+}
+header .logoAndSearch .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 50%;
+  min-height: 50px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 160px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#shop {
+  background-image: url(/assets/images/Desktop_Hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+#shop .shopSellRepeat {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#shop .shopSellRepeat h1 {
+  line-height: 35px;
+  color: #191c1f;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 45px;
+}
+#shop .shopSellRepeat p {
+  width: 27%;
+  min-height: 60px;
+  line-height: 26px;
+  color: #191c1f;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#shop .shopSellRepeat .button {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+#shop .shopSellRepeat .button button {
+  padding: 12px 25px 12px 25px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+}
+#shop .shopSellRepeat .button button:hover {
+  background-color: #595959;
+  color: white;
+}
+#shop .shopSellRepeat .button .firstSectionSecondButton {
+  padding: 12px 25px 12px 25px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  background-color: transparent;
+  font-family: sans-serif;
+}
+#shop .shopSellRepeat .button .firstSectionSecondButton:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 766px) {
+  #shop .shopSellRepeat h1 {
+    font-size: 30px;
+  }
+  #shop .shopSellRepeat p {
+    width: 50%;
+  }
+  #shop .shopSellRepeat .button button {
+    padding: 10px 20px 10px 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #shop .shopSellRepeat h1 {
+    font-size: 25px;
+  }
+  #shop .shopSellRepeat p {
+    width: 70%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #shop .shopSellRepeat h1 {
+    font-size: 20px;
+  }
+  #shop .shopSellRepeat p {
+    width: 70%;
+    font-size: 13px;
+  }
+  #shop .shopSellRepeat .button button {
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+#giftGuide {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#giftGuide img {
+  width: 100%;
+}
+
+#shopByCategory {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopByCategory .thirdSectionHeader {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopByCategory .fasihon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#shopByCategory .fasihon .thirdSectionImages img {
+  width: 100%;
+}
+#shopByCategory .fasihon .thirdtSectionText {
+  padding-top: 10px;
+  width: 100%;
+  min-height: 60px;
+  transition: 0.5s;
+}
+#shopByCategory .fasihon .thirdtSectionText a {
+  transition: 0.5s;
+  color: #191c1f;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+#shopByCategory .fasihon .thirdtSectionText a:hover {
+  text-decoration: none;
+}
+
+#featuretCollection {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#featuretCollection .headerForthSection {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#featuretCollection .fashion {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#featuretCollection .fashion .fasihonImg {
+  width: 100%;
+}
+#featuretCollection .fashion .fasihonImg a img {
+  width: 100%;
+}
+#featuretCollection .fashion .fashionText {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#featuretCollection .fashion .fashionText p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#featuretCollection .fashion .fashionText h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 37px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#featuretCollection .fashion .fashionText a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition: 0.7s;
+}
+#featuretCollection .fashion .fashionText a:hover {
+  transition: 0.7s;
+  text-decoration: none;
+}
+
+#fifthSection {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fifthSection .shopTheCollection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#fifthSection .shopTheCollection .fifthSectionImages {
+  width: 100%;
+}
+#fifthSection .shopTheCollection .fifthSectionImages img {
+  width: 100%;
+}
+#fifthSection .shopTheCollection .fifthSectionText {
+  width: 100%;
+  min-height: 190px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+#fifthSection .shopTheCollection .fifthSectionText h1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 37px;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 50px;
+}
+#fifthSection .shopTheCollection .fifthSectionText p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 27px;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 90%;
+  color: #191c1f;
+}
+#fifthSection .shopTheCollection .fifthSectionText a {
+  color: #191c1f;
+  transition: 0.5s;
+}
+#fifthSection .shopTheCollection .fifthSectionText a:hover {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+#shimmyIntoShimmer {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shimmyIntoShimmer .sixthSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+}
+#shimmyIntoShimmer #product {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shimmyIntoShimmer #product .boxDiv div {
+  min-height: 470px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#shimmyIntoShimmer #product .boxDiv div h5 {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: poppins;
+}
+#shimmyIntoShimmer #product .boxDiv div img {
+  width: 100%;
+}
+#shimmyIntoShimmer #product .boxDiv div span {
+  padding-top: 7px;
+  font-size: 13px;
+}
+#shimmyIntoShimmer #product .boxDiv div p {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: red;
+}
+#shimmyIntoShimmer #product .boxDiv div p a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: red;
+}
+#shimmyIntoShimmer .buttonLoadMore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shimmyIntoShimmer .buttonLoadMore button {
+  padding: 5px 20px 5px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: white;
+}
+#shimmyIntoShimmer .buttonLoadMore button:hover {
+  background-color: #595959;
+}
+
+#discontinuedChanelBags {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#discontinuedChanelBags .CollectorGuide {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#discontinuedChanelBags .CollectorGuide h2 {
+  padding-top: 20px;
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #191c1f;
+}
+#discontinuedChanelBags .CollectorGuide p {
+  color: #000;
+  width: 80%;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 200;
+  line-height: 26px;
+  color: #191c1f;
+  min-height: 230px;
+}
+#discontinuedChanelBags button {
+  background-color: #000;
+  padding: 13px 33px 13px 33px;
+}
+#discontinuedChanelBags button a {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  line-height: 20px;
+}
+#discontinuedChanelBags button a:hover {
+  text-decoration: none;
+}
+#discontinuedChanelBags .imagesAcademy img {
+  width: 100%;
+}
+
+@media screen and (max-width: 423px) {
+  #discontinuedChanelBags .CollectorGuide p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  #discontinuedChanelBags .CollectorGuide h2 {
+    width: 80%;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  #discontinuedChanelBags .CollectorGuide p {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+#shopInPerson {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopInPerson .headerShopInPerson {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopInPerson .imagesShopInPerson {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#shopInPerson .imagesShopInPerson img {
+  width: 100%;
+}
+#shopInPerson .imagesShopInPerson a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 200;
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+#shopInPerson .imagesShopInPerson a:hover {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}

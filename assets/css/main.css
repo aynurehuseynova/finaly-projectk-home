@@ -4,20 +4,59 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
+body.dark-theme {
+  background-color: #000000;
+  color: white;
 }
-body.dark-mode {
-  background-color: #000;
+body.dark-theme .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-theme .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-theme nav .navMenu .allMenuList li a {
   color: #fff;
 }
-body.dark-mode a,
-body.dark-mode ul,
-body.dark-mode li,
-body.dark-mode p,
-body.dark-mode span {
+body.dark-theme nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .divRegister button i {
+  color: white;
+}
+body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText h4 {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText p {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText a {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide p {
+  color: #fff;
+}
+body.dark-theme #shopInPerson .imagesShopInPerson a {
   color: #fff;
 }
 
@@ -105,35 +144,52 @@ header .logoAndSearch {
   min-height: 100px;
 }
 header .logoAndSearch .logo {
-  width: 40%;
+  width: 100%;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: start;
 }
-header .logoAndSearch .logo img {
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
   width: 100%;
 }
-header .logoAndSearch .search {
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
   width: 100%;
-  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-header .logoAndSearch .search .btn {
-  width: 60%;
-  min-height: 50px;
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
 }
-header .logoAndSearch .search .btn a {
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
   width: 30%;
   min-height: 50px;
 }
-header .logoAndSearch .search .btn a button {
+header .logoAndSearch .headerIcons .search .btn a button {
   border-radius: 0px;
   background-color: white;
-  width: 50%;
-  min-height: 50px;
+  width: 42px;
+  min-height: 42px;
 }
 header nav {
   display: flex;
@@ -166,7 +222,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 160px;
+  left: 1620px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -250,7 +306,56 @@ header nav .navMenu .dropdown button {
 header nav .navMenu .dropdown button:hover {
   background-color: white;
 }
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
 
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 992px) {
   header nav .container .allMenuList {
     display: none;
@@ -347,11 +452,30 @@ header nav .navMenu .dropdown button:hover {
     list-style: none;
   }
 }
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 769px) {
   header .title .findALocation {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -825,6 +949,2548 @@ header nav .navMenu .dropdown button:hover {
 }
 #shopInPerson .imagesShopInPerson a:hover {
   text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-mode .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-mode nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-mode nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text h3 {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text a {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h3 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h5 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text p {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2549019608);
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 80px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo img {
+  width: 100%;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-height: 80px;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 60px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 160px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+main {
+  width: 100%;
+}
+main #shopFashionphileImg {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #shopFashionphileImg .fashionphileImg {
+  background-image: url(/assets/images/abauthtmlimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+main #attainableLuxuryCuratedForyou {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+main #attainableLuxuryCuratedForyou .text {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 350px;
+}
+main #attainableLuxuryCuratedForyou .text h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 45px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #attainableLuxuryCuratedForyou .text p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #theFashionphileLegacy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+}
+main #theFashionphileLegacy .text {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 340px;
+}
+main #theFashionphileLegacy .text h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 45px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 50px;
+}
+main #theFashionphileLegacy .text p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #theFashionphileLegacy .text a {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #aurPromiseToYou {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 153vh;
+}
+main #aurPromiseToYou .text {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 140vh;
+}
+main #aurPromiseToYou .text h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 45px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #aurPromiseToYou .text p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 26px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main #aurPromiseToYou .text h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 45px;
+  color: #191c1f;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-theme {
+  background-color: #000000;
+  color: white;
+}
+body.dark-theme .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-theme .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-theme nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-theme nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo img {
+  width: 100%;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 160px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#corporateGovernance {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#corporateGovernance .allsection {
+  background-color: #EFEBEA;
+}
+#corporateGovernance .allsection .corporateGovernanceText {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+#corporateGovernance .allsection .corporateGovernanceImg {
+  width: 100%;
+  min-height: 500px;
+}
+#corporateGovernance .allsection .corporateGovernanceImg img {
+  width: 100%;
+}
+
+#Ceo {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Ceo .images img {
+  width: 100%;
+}
+#Ceo .allCeoText {
+  width: 100%;
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+#Ceo .allCeoText .mission {
+  width: 100%;
+  min-height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+#Ceo .allCeoText .mission h2 {
+  font-weight: 500;
+  font-family: Metropolis;
+  font-size: 25px;
+  line-height: 30px;
+}
+#Ceo .allCeoText .mission p {
+  font-weight: 400;
+  font-family: Metropolis;
+  font-size: 16px;
+  line-height: 28px;
+}
+#Ceo .allCeoText .president {
+  width: 100%;
+  min-height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+#Ceo .allCeoText .president h2 {
+  font-weight: 500;
+  font-family: Metropolis;
+  font-size: 25px;
+  line-height: 30px;
+}
+#Ceo .allCeoText .president p {
+  font-weight: 400;
+  font-family: Metropolis;
+  font-size: 16px;
+  line-height: 28px;
+}
+#Ceo .allCeoText .boardOfDirectors {
+  width: 100%;
+  min-height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#Ceo .allCeoText .boardOfDirectors h2 {
+  font-weight: 500;
+  font-family: Metropolis;
+  font-size: 25px;
+  line-height: 30px;
+}
+#Ceo .allCeoText .boardOfDirectors .gov-table tbody tr td {
+  font-weight: 400;
+  font-family: Metropolis;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-mode .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-mode nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-mode nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2549019608);
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 80px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo img {
+  width: 100%;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-height: 80px;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 60px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 160px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#sellProducts {
+  width: 100%;
+  min-height: 500px;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.dark-theme {
+  background-color: #000000;
+  color: white;
+}
+body.dark-theme .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-theme .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-theme nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-theme nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText h4 {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText p {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText a {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide p {
+  color: #fff;
+}
+body.dark-theme #shopInPerson .imagesShopInPerson a {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 1620px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#form {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form .singUp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#form .singUp h1 {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  font-size: 60px;
+  font-weight: 600;
+}
+#form .singUp form {
+  width: 100%;
+  background-color: aqua;
+  flex-direction: column;
 }
 
 footer {

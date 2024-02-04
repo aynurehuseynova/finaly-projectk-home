@@ -13,7 +13,7 @@ function getProduct() {
         box.className = "boxDiv col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
         box.innerHTML = `
         <div>
-<a href="./sell.html"><img src="${item.image}" alt="cart"> </a>
+<a href="./sell.html?id=${item.id}"><img src="${item.image}" alt="cart"></a>
             <h5>${item.marka}</h5>
             <span>${item.name}</span>
             <p>$<a href="./sell.html">${item.price}</a></p>
@@ -29,17 +29,18 @@ loadMore.addEventListener("click",getProduct)
 getProduct()
 
 
-const darkModeToggle = document.getElementById('darkModeToggle');
-const savedTheme = localStorage.getItem('theme');
-document.body.classList.toggle(savedTheme || 'light-mode');
+const theme__btn = document.getElementById("theme__btn");
 
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const currentTheme = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
-    localStorage.setItem('theme', currentTheme);
+theme__btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+  localStorage.setItem("mode", document.body.classList);
+
 });
 
-// Dark/light modu uygulamak için çağrılan fonksiyon
-function applyTheme(theme) {
-    document.body.classList.toggle('dark-mode', theme === 'dark-mode');
+if (localStorage.getItem("mode") != "") {
+  document.body.classList.add(localStorage.getItem("mode"));
 }
+
+
+
+

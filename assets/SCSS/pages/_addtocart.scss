@@ -57,7 +57,54 @@ body {
                 }
             }
         }
-      
+        #attainableLuxuryCuratedForyou{
+            .text{
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        #shopFashionphileImg{
+            .attainableLuxuryCuratedForyou{
+              .text{
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+              }  
+            }
+        }
+        #theFashionphileLegacy{
+            .text{
+                h3{
+                    color:#fff;
+                }
+                p{
+                    color: #fff;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        #aurPromiseToYou{
+            .text{
+                h3{
+                    color: #fff;
+                }
+                h5{
+                    color:#fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 
@@ -623,13 +670,10 @@ header {
         }
     }
 }
-#sellProducts{
-    width: 100%;
-    min-height: 500px;
-}
 
 
-// foolter
+
+// footer
 
 footer {
     width: 100%;

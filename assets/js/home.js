@@ -13,7 +13,7 @@ function getProduct() {
         box.className = "boxDiv col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
         box.innerHTML = `
         <div>
-<a href="./sell.html?id=${item.id}"><img src="${item.image}" alt="cart"></a>
+            <a href="./sell.html?id=${item.id}"><img src="${item.image}" alt="cart"></a>
             <h5>${item.marka}</h5>
             <span>${item.name}</span>
             <p>$<a href="./sell.html">${item.price}</a></p>
@@ -40,7 +40,5 @@ theme__btn.addEventListener("click", function () {
 if (localStorage.getItem("mode") != "") {
   document.body.classList.add(localStorage.getItem("mode"));
 }
-
-
 
 

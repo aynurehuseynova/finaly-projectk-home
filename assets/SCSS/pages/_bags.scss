@@ -5,137 +5,65 @@
 }
 
 //** dark-light mode
+// body {
+//     &.dark-theme {
+//         background-color: #000000;
+//         color: white;
 
-body {
-    &.dark-theme {
-        background-color: #000000;
-        color: white;
+//         .logoAndSearch {
+//             .logo {
+//                 .logoImg {
+//                     display: none;
+//                 }
 
-        .logoAndSearch {
-            .logo {
-                .logoImg {
-                    display: none;
-                }
+//                 .logoText {
+//                     display: block;
+//                 }
 
-                .logoText {
-                    display: block;
-                }
+//             }
+//         }
 
-            }
-        }
+//         nav {
+//             .navMenu {
+//                 .allMenuList {
+//                     li {
+//                         a {
+//                             color: #fff;
+//                         }
+//                     }
 
-        nav {
-            .navMenu {
-                .allMenuList {
-                    li {
-                        a {
-                            color: #fff;
-                        }
-                    }
+//                     .designer {
+//                         .list {
+//                             background-color: #000;
 
-                    .designer {
-                        .list {
-                            background-color: #000;
+//                         }
+//                     }
 
-                        }
-                    }
+//                     .bags {
+//                         .listBags {
+//                             background-color: #000;
+//                         }
+//                     }
 
-                    .bags {
-                        .listBags {
-                            background-color: #000;
-                        }
-                    }
+//                     .accessoriesList {
+//                         .list {
+//                             background-color: #000;
+//                         }
+//                     }
 
-                    .accessoriesList {
-                        .list {
-                            background-color: #000;
-                        }
-                    }
+//                 }
 
-                }
-.divRegister{
-    button{
-        i{
-            color: white;
-        }
-    }
-}
-            }
-        }
-
-        // section 3
-        #shopByCategory {
-            .fasihon {
-                .thirdtSectionText {
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 4
-        #featuretCollection {
-            .fashion {
-                .fashionText {
-                    h4 {
-                        color: #fff;
-                    }
-
-                    p {
-                        color: #fff;
-                    }
-
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 5
-        #fifthSection {
-            .shopTheCollection {
-                .fifthSectionText {
-                    h5 {
-                        color: #fff;
-                    }
-
-                    p {
-                        color: #fff;
-                    }
-
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 7
-
-        #discontinuedChanelBags {
-            .CollectorGuide {
-                h2 {
-                    color: #fff;
-                }
-
-                p {
-                    color: #fff;
-                }
-            }
-        }
-
-        // section 8
-        #shopInPerson {
-            .imagesShopInPerson {
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
+//                 .divRegister {
+//                     button {
+//                         i {
+//                             color: white;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // *****\\\\
 
@@ -334,7 +262,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 320px;
+                            left: 1620px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -731,399 +659,67 @@ header {
     }
 }
 
-// section 1
-#shop {
-    background-image: url(/assets/images/Desktop_Hero.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+#bagProduct {
     width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-
-    .shopSellRepeat {
-        width: 100%;
-        min-height: 300px;
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        h1 {
-            line-height: 35px;
-            color: #191c1f;
-            font-size: 35px;
-            font-weight: 600;
-            font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            ;
-            min-height: 45px;
-        }
-
-        p {
-            width: 27%;
-            min-height: 60px;
-            line-height: 26px;
-            color: #191c1f;
-            font-size: 16px;
-            font-weight: 300;
-            font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        .button {
-            display: flex;
-            width: 100%;
-            gap: 6px;
-            flex-wrap: wrap;
-
-            button {
-                padding: 12px 25px 12px 25px;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 20px;
-                color: white;
-                background-color: black;
-                font-family: sans-serif;
-                flex-wrap: wrap;
-                transition: .3s all ease;
-                border: 1px solid black;
-
-                &:hover {
-                    background-color: #595959;
-                    color: white;
-                    border: none;
-                }
-            }
-
-            .firstSectionSecondButton {
-                padding: 12px 25px 12px 25px;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 20px;
-                color: black;
-                background-color: transparent;
-                font-family: sans-serif;
-                transition: .3s all ease;
-
-                &:hover {
-                    background-color: black;
-                    color: white;
-                }
-            }
-        }
-        }
-    }
-
-@media screen and (max-width:766px) {
-    #shop {
-        .shopSellRepeat {
-            h1 {
-                font-size: 30px;
-            }
-
-            p {
-                width: 50%;
-            }
-
-            .button {
-                button {
-                    padding: 10px 20px 10px 20px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:376px) {
-    #shop {
-        .shopSellRepeat {
-            h1 {
-                font-size: 25px;
-            }
-
-            p {
-                width: 70%;
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:320px) {
-    #shop {
-        .shopSellRepeat {
-            h1 {
-                font-size: 20px;
-            }
-
-            p {
-                width: 70%;
-                font-size: 13px;
-            }
-
-            .button {
-                button {
-                    font-size: 13px;
-                    padding: 10px 20px 10px 20px;
-                }
-            }
-        }
-    }
-}
-
-// section 2
-#giftGuide {
-    width: 100%;
-    height: 400px;
+    min-height: 300vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-        width: 100%;
-    }
-}
-
-// section 3
-#shopByCategory {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .thirdSectionHeader {
-        width: 100%;
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .fasihon {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .thirdSectionImages {
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .thirdtSectionText {
-            padding-top: 10px;
-            width: 100%;
-            min-height: 60px;
-            transition: 0.5s;
-
-            a {
-                transition: 0.5s;
-                color: #191c1f;
-                font-size: 15px;
-                font-family: sans-serif;
-                font-weight: 200;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-// section 4
-#featuretCollection {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .headerForthSection {
-        width: 100%;
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .fashion {
-        width: 100%;
-        min-height: 450px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .fasihonImg {
-            width: 100%;
-
-            a {
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        .fashionText {
-            width: 100%;
-            min-height: 200px;
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            margin-bottom: 20px;
-
-            p {
-                font-size: 15px;
-                font-weight: 200;
-                line-height: 26px;
-                color: #191c1f;
-                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            h4 {
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 37px;
-                color: #191c1f;
-                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            a {
-                font-size: 15px;
-                font-weight: 600;
-                line-height: 26px;
-                color: #191c1f;
-                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                transition: 0.7s;
-
-                &:hover {
-                    transition: 0.7s;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-// section 5
-#fifthSection {
-    width: 100%;
-    min-height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .shopTheCollection {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .fifthSectionImages {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .fifthSectionText {
-            width: 100%;
-            min-height: 190px;
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            padding-top: 10px;
-            margin-bottom: 20px;
-
-            h1 {
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 37px;
-                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                ;
-                min-height: 50px;
-            }
-
-            p {
-                font-weight: 200;
-                font-size: 15px;
-                line-height: 27px;
-                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                ;
-                width: 90%;
-                color: #191c1f;
-            }
-
-            a {
-                color: #191c1f;
-                transition: 0.5s;
-
-                &:hover {
-                    transition: 0.5s;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-// section 6
-
-#shimmyIntoShimmer {
-    width: 100%;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .sixthSectionHeader {
+margin-bottom: 20px;
+    .title {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         min-height: 100px;
+        padding-top: 20px;
+
+        h1 {
+            min-height: 50px;
+            line-height: 50px;
+            font-size: 70px;
+            font-family: poppins;
+            font-weight: 800;
+        }
     }
 
     #product {
         width: 100%;
-        min-height: 500px;
+        min-height: 250vh;
         display: flex;
         align-items: center;
         justify-content: center;
 
         .boxDiv {
             div {
-                min-height: 470px;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+                margin-bottom: 20px;
+                transition: width 2s height 3s;
+                min-height: 538px;
 
                 h5 {
                     padding-top: 20px;
                     font-weight: 700;
                     font-size: 20px;
                     font-family: poppins;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
-                img {
-                    width: 100%;
+                a {
+                    img {
+                        width: 100%;
+                    }
+
                 }
 
                 span {
                     padding-top: 7px;
                     font-size: 13px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
                 }
 
                 p {
@@ -1143,165 +739,18 @@ header {
 
                     }
                 }
+
+                &:hover {
+                    width: 100%;
+                    height: 490px;
+                }
             }
         }
-    }
 
-    .buttonLoadMore {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        button {
-            padding: 5px 20px 5px 20px;
-            font-size: 13px;
-            font-weight: 700;
-            background-color: white;
-
-            &:hover {
-                background-color: #595959;
-            }
-        }
     }
 }
 
-// section 7
-#discontinuedChanelBags {
-    width: 100%;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    .CollectorGuide {
-        width: 100%;
-        min-height: 400px;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        flex-direction: column;
-        margin-bottom: 20px;
-
-        h2 {
-            padding-top: 20px;
-            width: 80%;
-            font-family: sans-serif;
-            font-size: 26px;
-            font-weight: 500;
-            line-height: 44px;
-            color: #191c1f;
-        }
-
-        p {
-            color: #000;
-            width: 80%;
-            font-size: 15px;
-            font-family: sans-serif;
-            font-weight: 200;
-            line-height: 26px;
-            color: #191c1f;
-            min-height: 230px;
-        }
-    }
-
-    button {
-        background-color: #000;
-        padding: 13px 33px 13px 33px;
-
-        a {
-            font-size: 15px;
-            font-weight: 600;
-            color: white;
-            line-height: 20px;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-    }
-
-
-    .imagesAcademy {
-        img {
-            width: 100%;
-        }
-    }
-}
-
-@media screen and (max-width:423px) {
-    #discontinuedChanelBags {
-        .CollectorGuide {
-            p {
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:376px) {
-    #discontinuedChanelBags {
-        .CollectorGuide {
-            h2 {
-                width: 80%;
-                padding-top: 20px;
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 13px;
-                width: 100%;
-            }
-        }
-    }
-}
-
-// section 8
-
-#shopInPerson {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .headerShopInPerson {
-        width: 100%;
-        min-height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .imagesShopInPerson {
-        width: 100%;
-        min-height: 550px;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        flex-direction: column;
-        margin-bottom: 20px;
-
-        img {
-            width: 100%;
-        }
-
-        a {
-            color: #000;
-            font-size: 12px;
-            font-weight: 200;
-            font-family: sans-serif;
-            padding-top: 20px;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-// foolter
 
 footer {
     width: 100%;

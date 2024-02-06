@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let productContainer = document.getElementById('product');
 
-    fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/form')
+    fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable')
       .then(response => response.json())
       .then(data => {
         let bagsProducts = data.filter(item => item.category === 'Shoes');

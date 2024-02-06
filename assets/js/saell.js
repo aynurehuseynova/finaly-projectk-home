@@ -27,7 +27,7 @@ const productDetailsContainer = document.getElementById("products");
 
 const id = new URLSearchParams(window.location.search).get("id");
 
-fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/form/" + id)
+fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable/" + id)
   .then((response) => response.json())
   .then((item) => {
     productDetailsContainer.innerHTML = 
@@ -42,6 +42,8 @@ fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/form/" + id)
             <div class="productsName">
               <h5>${item.marka}</h5>
               <span>${item.name}</span>
+              <span>${item.details}</span>
+              <span>${item.country}</span>
               <p>$${item.price}</p>
               <div class= "buttons">
                 <button class="basket" onclick="addToBasket(${item.id},'${item.name}', ${item.price})">SEPETE EKLE</button>

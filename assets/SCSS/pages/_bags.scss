@@ -662,11 +662,12 @@ header {
 
 #bagProduct {
     width: 100%;
-    min-height: 300vh;
+    min-height: 400vh;
     display: flex;
     align-items: center;
     justify-content: center;
-margin-bottom: 20px;
+    margin-bottom: 20px;
+    
     .title {
         display: flex;
         align-items: center;
@@ -686,7 +687,6 @@ margin-bottom: 20px;
 
     #product {
         width: 100%;
-        min-height: 250vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -695,7 +695,7 @@ margin-bottom: 20px;
             div {
                 margin-bottom: 20px;
                 transition: width 2s height 3s;
-                min-height: 538px;
+                min-height:350px;
 
                 h5 {
                     padding-top: 20px;
@@ -708,10 +708,23 @@ margin-bottom: 20px;
                 }
 
                 a {
-                    img {
+                    .image-container {
+                        position: relative;
+                        overflow: hidden;
                         width: 100%;
-                    }
-
+                      
+                        .animated-image {
+                          width: 100%;
+                          min-height: auto;
+                          object-fit: cover;
+                          transition: transform 0.5s ease, opacity 0.5s ease;
+                          margin-bottom: 20px;
+                        }
+                        &:hover .animated-image {
+                          transform: scale(1.2); /* 1.2 kat büyüme */
+                          opacity: 0.8; /* %80 görünürlük */
+                        }
+                      }
                 }
 
                 span {
@@ -742,7 +755,7 @@ margin-bottom: 20px;
 
                 &:hover {
                     width: 100%;
-                    height: 490px;
+                    height: 400px;
                 }
             }
         }

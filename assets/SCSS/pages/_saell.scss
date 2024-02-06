@@ -639,10 +639,23 @@ header {
             align-items: start;
             justify-content: start;
 
-            img {
-                width: 100%;
-            }
-
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  
+    .animated-image {
+      width: 100%;
+      min-height: auto;
+      object-fit: cover;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    &:hover .animated-image {
+      transform: scale(1.2); /* 1.2 kat büyüme */
+      opacity: 0.8; /* %80 görünürlük */
+    }
+  }
+  
             .productsName {
                 padding-top: 20px;
                 display: flex;
@@ -693,9 +706,8 @@ header {
                     min-height: 200px;
                     display: flex;
                     align-items: center;
-                    justify-content: end;
-                    flex-direction: column;
-                    gap: 20px;
+                    justify-content: center;
+                    gap: 40px;
                     button{
                         padding: 10px 15px 10px 15px;
                         border-radius: 50%;

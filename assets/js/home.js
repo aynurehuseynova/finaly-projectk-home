@@ -5,7 +5,7 @@ let page = 1 ;
 
 
 function getProduct() {
-    axios.get(`https://655ddd779f1e1093c59a0b08.mockapi.io/form?page=${page}&limit=${limit}`)
+    axios.get(`https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable?page=${page}&limit=${limit}`)
     .then((res) => {
         db = res.data;
         db.map((item) => {

@@ -5,72 +5,115 @@
 }
 
 //** dark-light mode
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
 
-// body {
-//     &.dark-theme {
-//         background-color: #000000;
-//         color: white;
+    &.dark-mode {
+        background-color: #000;
+        color: #fff;
+        .logoAndSearch {
+            .logo {
+                .logoImg {
+                    display: none;
+                }
 
-//         .logoAndSearch {
-//             .logo {
-//                 .logoImg {
-//                     display: none;
-//                 }
+                .logoText {
+                    display: block;
+                }
 
-//                 .logoText {
-//                     display: block;
-//                 }
+            }
+        }
 
-//             }
-//         }
+        nav {
+            .navMenu {
+                .allMenuList {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                    }
 
-//         nav {
-//             .navMenu {
-//                 .allMenuList {
-//                     li {
-//                         a {
-//                             color: #fff;
-//                         }
-//                     }
+                    .designer {
+                        .list {
+                            background-color: #000;
 
-//                     .designer {
-//                         .list {
-//                             background-color: #000;
+                        }
+                    }
 
-//                         }
-//                     }
+                    .bags {
+                        .listBags {
+                            background-color: #000;
+                        }
+                    }
 
-//                     .bags {
-//                         .listBags {
-//                             background-color: #000;
-//                         }
-//                     }
+                    .accessoriesList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
 
-//                     .accessoriesList {
-//                         .list {
-//                             background-color: #000;
-//                         }
-//                     }
-
-//                 }
-
-//                 .divRegister {
-//                     button {
-//                         i {
-//                             color: white;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                }
+            }
+        }
+        #attainableLuxuryCuratedForyou{
+            .text{
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        #shopFashionphileImg{
+            .attainableLuxuryCuratedForyou{
+              .text{
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+              }  
+            }
+        }
+        #theFashionphileLegacy{
+            .text{
+                h3{
+                    color:#fff;
+                }
+                p{
+                    color: #fff;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        #aurPromiseToYou{
+            .text{
+                h3{
+                    color: #fff;
+                }
+                h5{
+                    color:#fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
 
 // *****\\\\
 
 
 header {
     width: 100%;
+    border: 1px solid #00000041;
 
     .title {
         width: 100%;
@@ -163,11 +206,11 @@ header {
 
     .logoAndSearch {
         width: 100%;
-        min-height: 100px;
+        min-height: 80px;
 
         .logo {
             width: 100%;
-            min-height: 100px;
+            min-height: 80px;
             display: flex;
             align-items: center;
             justify-content: start;
@@ -177,16 +220,11 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-                img {
-                    width: 100%;
-                }
             }
 
-            .logoText {
-                display: none;
+            img {
+                width: 100%;
             }
-
         }
 
         .headerIcons {
@@ -194,6 +232,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: end;
+            min-height: 80px;
 
             .search {
                 width: 46%;
@@ -237,7 +276,7 @@ header {
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            min-height: 70px;
+            min-height: 60px;
 
             .allMenuList {
                 display: flex;
@@ -263,7 +302,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 1620px;
+                            left: 160px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -372,34 +411,6 @@ header {
                     &:hover {
                         background-color: white;
                     }
-                }
-            }
-
-            .divRegister {
-                width: 70%;
-                display: flex;
-                align-items: center;
-                justify-content: end;
-                gap: 10px;
-                padding-right: 20px;
-
-                #userName {
-                    width: 30%;
-                    gap: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-                    margin-right: 20px;
-
-                    i {
-                        font-size: 20px;
-                    }
-                }
-
-                button {
-                    padding: 7px;
-                    border-style: none;
-                    background-color: transparent;
                 }
             }
         }
@@ -659,81 +670,10 @@ header {
         }
     }
 }
-// section
-
-#bagProduct {
-    width: 100%;
-    min-height: 360vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    #product {
-        width: 100%;
-        min-height: 350vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .boxDiv {
-            div {
-                transition: width 2s height 3s;
-                min-height: 538px;
-
-                h5 {
-                    padding-top: 20px;
-                    font-weight: 700;
-                    font-size: 20px;
-                    font-family: poppins;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                a {
-                    img {
-                        width: 100%;
-                    }
-
-                }
-
-                span {
-                    padding-top: 7px;
-                    font-size: 13px;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                }
-
-                p {
-                    padding-top: 20px;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-weight: 600;
-                    color: red;
-
-                    a {
-                        font-size: 20px;
-                        text-decoration: none;
-                        font-weight: 600;
-                        color: red;
-
-                    }
-                }
-
-                &:hover {
-                    width: 100%;
-                    height: 490px;
-                }
-            }
-        }
-
-    }
-}
 
 
+
+// footer
 
 footer {
     width: 100%;

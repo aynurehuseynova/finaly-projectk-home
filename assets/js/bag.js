@@ -24,7 +24,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let productContainer = document.getElementById('product');
 
-    fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/form')
+    fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable')
       .then(response => response.json())
       .then(data => {
         let bagsProducts = data.filter(item => item.category === 'Bags');
@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
           cardDiv.className = 'boxDiv col-xl-4 col-xl-4 col-md-6 col-sm-12 col-12';
           cardDiv.innerHTML = `
           <div>
-            <a href="./sell.html?id=${item.id}"><img src="${item.image}" alt="cart"></a>
+          <div class="image-container">
+            <a href="./sell.html?id=${item.id}"><img  src="${item.image}" class="animated-image" alt="cart"></a>
+            </div>
             <h5>${item.marka}</h5>
             <span>${item.name}</span>
             <p>$<a href="./sell.html">${item.price}</a></p>

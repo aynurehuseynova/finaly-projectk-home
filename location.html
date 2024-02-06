@@ -14,46 +14,381 @@
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="findALocation">
-                            <a href="./location.html">Find a Location</a>
+  <header>
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="findALocation">
+                        <a href="./location.html">Find a Location</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="buyNow">
+                        <a href="#">Buy Now, Pay Later with Affirm</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="control">
+                        <ul>
+                            <li><a href="./sell.html">Sell</a></li>
+                            <li><a href="./wishList.html">Wishlist</a></li>
+                            <li><a href="./addToCart.html">Shopping Bag <span id="cartCount">0</span></a></li>
+                        </ul>
+                        <div class="mode">
+                            <button id="theme__btn"><i class="fa-regular fa-lightbulb"></i></button>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="titleCarousel">
-                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                  </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-4"></div>
                 </div>
             </div>
         </div>
-
-    </header>
+    </div>
+    <div class="logoAndSearch">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="logo">
+                        <div class="logoImg">
+                            <a href="./home.html"><img src="./assets/images/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="logoText">
+                            <h1>FASHIONPHILE</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="headerIcons">
+                        <div class="search">
+                            <div class="btn">
+                                <a href="./registration.html"> <button class="btn btn-outline-secondary"
+                                        type="button" id="button-addon2"><i class="fa-solid fa-user-plus"
+                                            style="color:black;"></i></button></a>
+                            </div>
+                            <div class="btn">
+                                <a href="./searchByName.html"> <button class="btn btn-outline-secondary"
+                                        type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"
+                                            style="color:black;"></i></button></a>
+                            </div>
+                            <div class="btn">
+                                <a href="./searchByName.html"> <button class="btn btn-outline-secondary"
+                                        type="button" id="button-addon2"><i class="fa-solid fa-location-dot"
+                                            style="color:black;"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="navMenu">
+                <ul class="allMenuList">
+                    <li><a href="">New Arrivals </a></li>
+                    <li class="designer"><a href="./sell.html">Designers</a>
+                        <div class="list">
+                            <div class="topDesinger">
+                                <ul>
+                                    <li>
+                                        <h6>Top Designers</h6>
+                                    </li>
+                                    <li>Chanel</li>
+                                    <li>Hermes</li>
+                                    <li>Louis Vuitton</li>
+                                    <li>Gucci</li>
+                                    <li>Christian Dior</li>
+                                    <li>Cartier</li>
+                                    <li>Saint Laurent</li>
+                                    <li>Van Cleef & Arpels</li>
+                                    <li>Bottega Veneta</li>
+                                    <li>Fendi</li>
+                                </ul>
+                            </div>
+                            <div class="topDesinger">
+                                <ul>
+                                    <li>
+                                        <h6>Designers</h6>
+                                    </li>
+                                    <li>Shop all designers</li>
+                                    <li>Alaia</li>
+                                    <li>Alexander McQueen</li>
+                                    <li>Alexander Wang</li>
+                                    <li>Bottega Veneta</li>
+                                    <li>Boucheron</li>
+                                    <li>Breguet</li>
+                                    <li>Breitling</li>
+                                    <li>Buccellati</li>
+                                    <li>Bulgari</li>
+                                    <li>Burberry</li>
+                                    <li>Cartier</li>
+                                    <li>Celine</li>
+                                    <li>Chanel</li>
+                                </ul>
+                            </div>
+                            <div class="topDesinger">
+                                <ul>
+                                    <li>Damiani</li>
+                                    <li>David Yurman</li>
+                                    <li>Delvaux</li>
+                                    <li>Dolce Gabbana</li>
+                                    <li>Elizabeth Locke</li>
+                                    <li> FASHIONPHILE Swag</li>
+                                    <li>Fendi</li>
+                                    <li>Foundrae</li>
+                                    <li>Franck Muller</li>
+                                    <li>Grand Seiko</li>
+                                    <li>Gucci</li>
+                                    <li>Harry Winston</li>
+                                    <li>Hermes</li>
+                                    <li>Hublot</li>
+                                    <li>Irene Neuwirth</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bags"><a href="./bagProduct.html">Bags</a>
+                        <div class="listBags">
+                            <div class="style">
+                                <ul>
+                                    <li>
+                                        <h6>Styles</h6>
+                                    </li>
+                                    <li>Shop All Bags</li>
+                                    <li>Backpacks</li>
+                                    <li>Belt Bags</li>
+                                    <li>Bucket Bags</li>
+                                    <li>Clutch & Evening Bags</li>
+                                    <li>Crossbody</li>
+                                    <li>Handbags</li>
+                                </ul>
+                            </div>
+                            <div class="style">
+                                <ul>
+                                    <li>Men's Bags</li>
+                                    <li> Professional</li>
+                                    <li>Shoulder Bags</li>
+                                    <li>Top Handles</li>
+                                    <li>Totes</li>
+                                    <li>Travel & Luggage</li>
+                                    <li>Wallet Style</li>
+                                </ul>
+                            </div>
+                            <div class="style">
+                                <ul>
+                                    <li>Featured</li>
+                                    <li>Most Popular</li>
+                                    <li>Over 50% off Retail</li>
+                                    <li>Under $1,000</li>
+                                    <li>Quiet Luxury</li>
+                                    <li>Mini Bags</li>
+                                    <li>Vintage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accessoriesList"><a href="./accessories.html">Accessories</a>
+                        <div class="list">
+                            <div class="accessories">
+                                <ul>
+                                    <li>
+                                        <h6> Accessories</h6>
+                                    </li>
+                                    <li>Shop All Accessories</li>
+                                    <li>Agendas</li>
+                                    <li>Bag Charms</li>
+                                    <li> Belts</li>
+                                    <li> Cosmetic Cases</li>
+                                    <li>Extra Bag Straps</li>
+                                    <li>FASHIONPHILE Merchandise</li>
+                                    <li>Gloves</li>
+                                    <li>Bottega Veneta</li>
+                                    <li>Hair Accessories</li>
+                                </ul>
+                            </div>
+                            <div class="accessories">
+                                <ul>
+                                    <li>Luggage Tags</li>
+                                    <li>Men's Accessories</li>
+                                    <li>Men's Wallets</li>
+                                    <li>Alexander Wang</li>
+                                    <li>Pet Accessories</li>
+                                    <li>Phone & Tablet Cases</li>
+                                    <li>Pins & Brooches</li>
+                                    <li>Pouches</li>
+                                    <li>Buccellati</li>
+                                    <li>Scarves</li>
+                                    <li>Sunglasses</li>
+                                    <li>T-Shirts</li>
+                                    <li>Wallets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./shoes.html"></a>Shoes</li>
+                    <li>Jewelry</li>
+                    <li>Watches</li>
+                    <li>Sale</li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="">New Arrivals </a></li>
+                        <li class="designer"><a href="">Designers</a>
+                            <div class="list">
+                                <div class="topDesinger">
+                                    <ul>
+                                        <li>
+                                            <h6>Top Designers</h6>
+                                        </li>
+                                        <li>Chanel</li>
+                                        <li>Hermes</li>
+                                        <li>Louis Vuitton</li>
+                                        <li>Gucci</li>
+                                        <li>Christian Dior</li>
+                                        <li>Cartier</li>
+                                        <li>Saint Laurent</li>
+                                        <li>Van Cleef & Arpels</li>
+                                        <li>Bottega Veneta</li>
+                                        <li>Fendi</li>
+                                    </ul>
+                                </div>
+                                <div class="topDesinger">
+                                    <ul>
+                                        <li>
+                                            <h6>Designers</h6>
+                                        </li>
+                                        <li>Shop all designers</li>
+                                        <li>Alaia</li>
+                                        <li>Alexander McQueen</li>
+                                        <li>Alexander Wang</li>
+                                        <li>Bottega Veneta</li>
+                                        <li>Boucheron</li>
+                                        <li>Breguet</li>
+                                        <li>Breitling</li>
+                                        <li>Buccellati</li>
+                                        <li>Bulgari</li>
+                                        <li>Burberry</li>
+                                        <li>Cartier</li>
+                                        <li>Celine</li>
+                                        <li>Chanel</li>
+                                    </ul>
+                                </div>
+                                <div class="topDesinger">
+                                    <ul>
+                                        <li>Damiani</li>
+                                        <li>David Yurman</li>
+                                        <li>Delvaux</li>
+                                        <li>Dolce Gabbana</li>
+                                        <li>Elizabeth Locke</li>
+                                        <li> FASHIONPHILE Swag</li>
+                                        <li>Fendi</li>
+                                        <li>Foundrae</li>
+                                        <li>Franck Muller</li>
+                                        <li>Grand Seiko</li>
+                                        <li>Gucci</li>
+                                        <li>Harry Winston</li>
+                                        <li>Hermes</li>
+                                        <li>Hublot</li>
+                                        <li>Irene Neuwirth</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bags"><a href="./bagProduct.html">Bags</a>
+                            <div class="listBags">
+                                <div class="style">
+                                    <ul>
+                                        <li>
+                                            <h6>Styles</h6>
+                                        </li>
+                                        <li>Shop All Bags</li>
+                                        <li>Backpacks</li>
+                                        <li>Belt Bags</li>
+                                        <li>Bucket Bags</li>
+                                        <li>Clutch & Evening Bags</li>
+                                        <li>Crossbody</li>
+                                        <li>Handbags</li>
+                                    </ul>
+                                </div>
+                                <div class="style">
+                                    <ul>
+                                        <li>Men's Bags</li>
+                                        <li> Professional</li>
+                                        <li>Shoulder Bags</li>
+                                        <li>Top Handles</li>
+                                        <li>Totes</li>
+                                        <li>Travel & Luggage</li>
+                                        <li>Wallet Style</li>
+                                    </ul>
+                                </div>
+                                <div class="style">
+                                    <ul>
+                                        <li>Featured</li>
+                                        <li>Most Popular</li>
+                                        <li>Over 50% off Retail</li>
+                                        <li>Under $1,000</li>
+                                        <li>Quiet Luxury</li>
+                                        <li>Mini Bags</li>
+                                        <li>Vintage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accessoriesList"><a href="./accessories.html">Accessories</a>
+                            <div class="list">
+                                <div class="accessories">
+                                    <ul>
+                                        <li>
+                                            <h6> Accessories</h6>
+                                        </li>
+                                        <li>Shop All Accessories</li>
+                                        <li>Agendas</li>
+                                        <li>Bag Charms</li>
+                                        <li> Belts</li>
+                                        <li> Cosmetic Cases</li>
+                                        <li>Extra Bag Straps</li>
+                                        <li>FASHIONPHILE Merchandise</li>
+                                        <li>Gloves</li>
+                                        <li>Bottega Veneta</li>
+                                        <li>Hair Accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="accessories">
+                                    <ul>
+                                        <li>Luggage Tags</li>
+                                        <li>Men's Accessories</li>
+                                        <li>Men's Wallets</li>
+                                        <li>Alexander Wang</li>
+                                        <li>Pet Accessories</li>
+                                        <li>Phone & Tablet Cases</li>
+                                        <li>Pins & Brooches</li>
+                                        <li>Pouches</li>
+                                        <li>Buccellati</li>
+                                        <li>Scarves</li>
+                                        <li>Sunglasses</li>
+                                        <li>T-Shirts</li>
+                                        <li>Wallets</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="./shoes.html"></a>Shoes</li>
+                        <li><a href="##">Jewelry</a></li>
+                        <li><a href="#">Watches</a> </li>
+                        <li><a href="./sell.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="divRegister"> 
+                    <span id="userName">USER</span><i class="fa-solid fa-user"></i>
+                    <button onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

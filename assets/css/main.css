@@ -27,6 +27,21 @@ body.dark-theme nav .navMenu .allMenuList .bags .listBags {
 body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
   background-color: #000;
 }
+body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .shoes .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .jewelryList .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .whatchList .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .saleList .list {
+  background-color: #000;
+}
 body.dark-theme nav .navMenu .divRegister button i {
   color: white;
 }
@@ -223,7 +238,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 320px;
+  left: 300px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -264,7 +279,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -288,9 +303,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -848,6 +959,7 @@ header nav .navMenu .divRegister button {
   background-color: white;
 }
 #shimmyIntoShimmer .buttonLoadMore button:hover {
+  color: #fff;
   background-color: #595959;
 }
 
@@ -1066,67 +1178,8 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
-}
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-body.dark-mode .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-mode .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-mode nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-mode nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text h3 {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text a {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h3 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h5 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text p {
-  color: #fff;
-}
-
 header {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2549019608);
 }
 header .title {
   width: 100%;
@@ -1206,11 +1259,11 @@ header .title .control ul li a {
 }
 header .logoAndSearch {
   width: 100%;
-  min-height: 80px;
+  min-height: 100px;
 }
 header .logoAndSearch .logo {
   width: 100%;
-  min-height: 80px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -1221,15 +1274,17 @@ header .logoAndSearch .logo .logoImg {
   align-items: center;
   justify-content: center;
 }
-header .logoAndSearch .logo img {
+header .logoAndSearch .logo .logoImg img {
   width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
 }
 header .logoAndSearch .headerIcons {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
-  min-height: 80px;
 }
 header .logoAndSearch .headerIcons .search {
   width: 46%;
@@ -1265,7 +1320,7 @@ header nav .navMenu {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
 }
 header nav .navMenu .allMenuList {
   display: flex;
@@ -1285,7 +1340,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 160px;
+  left: 1620px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -1368,6 +1423,804 @@ header nav .navMenu .dropdown button {
 }
 header nav .navMenu .dropdown button:hover {
   background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#bagsCarousel {
+  width: 100%;
+}
+#bagsCarousel .corusel img {
+  height: 760px !important;
+}
+
+#bagProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 450vh;
+}
+#bagProduct .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#bagProduct .titleSort {
+  width: 100%;
+  min-height: 700px;
+  top: 82px;
+  position: absolute;
+}
+#bagProduct .titleSort select {
+  width: 100%;
+  min-height: 50px;
+}
+#bagProduct #product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bagProduct #product .boxDiv div {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#bagProduct #product .boxDiv div img {
+  width: 100%;
+}
+#bagProduct #product .boxDiv div h5 {
+  min-height: 30px;
+  font-family: poppins;
+  font-weight: 600;
+  padding-top: 20px;
+}
+#bagProduct #product .boxDiv div span {
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 40px;
+}
+#bagProduct #product .boxDiv div p {
+  font-size: 20px;
+  font-family: poppins;
+  color: red;
+}
+#bagProduct #product .boxDiv div p a {
+  text-decoration: none;
+  color: red;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-mode .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-mode nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-mode nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text h3 {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text a {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h3 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h5 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text p {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 992px) {
@@ -1784,6 +2637,1441 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#acsessuaresProduct {
+  width: 100%;
+}
+#acsessuaresProduct #carousel img {
+  min-height: 400px !important;
+}
+
+#acsessuaresProduct {
+  width: 100%;
+  min-height: 450vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#acsessuaresProduct .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+}
+#acsessuaresProduct .title h1 {
+  min-height: 50px;
+  line-height: 50px;
+  font-size: 70px;
+  font-family: poppins;
+  font-weight: 800;
+}
+#acsessuaresProduct #products {
+  width: 100%;
+  min-height: 250vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#acsessuaresProduct #products .boxDiv div {
+  transition: width 2s height 3s;
+  min-height: 538px;
+  margin-bottom: 20px;
+}
+#acsessuaresProduct #products .boxDiv div h5 {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#acsessuaresProduct #products .boxDiv div a img {
+  width: 100%;
+}
+#acsessuaresProduct #products .boxDiv div span {
+  padding-top: 7px;
+  font-size: 13px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#acsessuaresProduct #products .boxDiv div p {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: red;
+}
+#acsessuaresProduct #products .boxDiv div p a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: red;
+}
+#acsessuaresProduct #products .boxDiv div:hover {
+  width: 100%;
+  height: 490px;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-mode .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-mode nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-mode nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text h3 {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text a {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h3 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h5 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text p {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#addToCart {
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   color: #000;
@@ -1908,8 +4196,11 @@ header .logoAndSearch .logo .logoImg {
   align-items: center;
   justify-content: center;
 }
-header .logoAndSearch .logo img {
+header .logoAndSearch .logo .logoImg img {
   width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
 }
 header .logoAndSearch .headerIcons {
   width: 100%;
@@ -1971,7 +4262,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 160px;
+  left: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -2012,7 +4303,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -2036,9 +4327,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -2054,6 +4441,30 @@ header nav .navMenu .dropdown button {
 }
 header nav .navMenu .dropdown button:hover {
   background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 992px) {
@@ -2441,645 +4852,6 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
-header {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2549019608);
-}
-header .title {
-  width: 100%;
-  min-height: 40px;
-  background-color: black;
-}
-header .title .findALocation {
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-header .title .findALocation a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .title .buyNow {
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .buyNow a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .title .control {
-  width: 100%;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control .mode {
-  width: 20%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 5px;
-}
-header .title .control .mode button {
-  background-color: transparent;
-  border-color: white;
-}
-header .title .control .mode button i {
-  color: white;
-  font-size: 18px;
-}
-header .title .control ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 10px;
-}
-header .title .control ul li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control ul li a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .logoAndSearch {
-  width: 100%;
-  min-height: 80px;
-}
-header .logoAndSearch .logo {
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-header .logoAndSearch .logo .logoImg {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .logoAndSearch .logo img {
-  width: 100%;
-}
-header .logoAndSearch .headerIcons {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  min-height: 80px;
-}
-header .logoAndSearch .headerIcons .search {
-  width: 46%;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn {
-  width: 21%;
-  min-height: 50px;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn a {
-  width: 30%;
-  min-height: 50px;
-}
-header .logoAndSearch .headerIcons .search .btn a button {
-  border-radius: 0px;
-  background-color: white;
-  width: 42px;
-  min-height: 42px;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
-header nav .navMenu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  min-height: 60px;
-}
-header nav .navMenu .allMenuList {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  list-style-type: none;
-  width: 100%;
-}
-header nav .navMenu .allMenuList li a {
-  line-height: 63px;
-  color: black;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-}
-header nav .navMenu .allMenuList .designer:hover .list {
-  display: block;
-  top: 215px;
-  left: 160px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .designer .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .bags:hover .listBags {
-  display: block;
-  top: 215px;
-  left: 360px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .bags .listBags {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .bags .listBags .style {
-  padding-top: 20px;
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .bags .listBags .style ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .accessoriesList:hover .list {
-  display: block;
-  top: 215px;
-  left: 420px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
-  list-style: none;
-}
-header nav .navMenu .dropdown {
-  display: none;
-  width: 100%;
-}
-header nav .navMenu .dropdown button {
-  background-color: white;
-  border: none;
-  color: black;
-  border-radius: 0px;
-  font-size: 23px;
-}
-header nav .navMenu .dropdown button:hover {
-  background-color: white;
-}
-
-@media screen and (max-width: 992px) {
-  .logoAndSearch {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo .logoImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .headerIcons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav .container .allMenuList {
-    display: none;
-  }
-  header nav .container .dropdown {
-    display: block;
-  }
-  header nav .container .dropdown .dropdown-menu {
-    align-items: center;
-    padding: 15px;
-    flex-direction: column;
-    list-style-type: none;
-    width: 100%;
-  }
-  header nav .container .dropdown .dropdown-menu li a {
-    line-height: 63px;
-    color: black;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-  }
-  header nav .container .dropdown .dropdown-menu .designer:hover .list {
-    display: block;
-    top: 215px;
-    left: 160px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
-    display: block;
-    top: 215px;
-    left: 360px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
-    padding-top: 20px;
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
-    display: block;
-    top: 215px;
-    left: 420px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
-    list-style: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow {
-    display: none;
-  }
-  header .title .control {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 769px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 425px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .findALocation a {
-    font-size: 12px;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-  header .title .control {
-    width: 100%;
-  }
-  header .title .control ul {
-    width: 100%;
-  }
-  header .title .control ul li a {
-    font-size: 10px;
-  }
-}
-#sellProducts {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#sellProducts #products div {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-}
-#sellProducts #products div .image-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-#sellProducts #products div .image-container .animated-image {
-  width: 100%;
-  min-height: auto;
-  object-fit: cover;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-#sellProducts #products div .image-container:hover .animated-image {
-  transform: scale(1.2); /* 1.2 kat büyüme */
-  opacity: 0.8; /* %80 görünürlük */
-}
-#sellProducts #products div .productsName {
-  padding-top: 20px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-  min-height: 637px;
-  width: 100%;
-  padding-left: 20px;
-}
-#sellProducts #products div .productsName h5 {
-  font-size: 46px;
-  line-height: 28px;
-  font-family: poppins;
-  min-height: 40px;
-  font-weight: 400;
-}
-#sellProducts #products div .productsName span {
-  font-size: 20px;
-  font-family: sans-serif;
-  min-height: 50px;
-  font-family: poppins;
-}
-#sellProducts #products div .productsName p {
-  font-size: 30px;
-  font-family: poppins;
-  color: red;
-  min-height: 190px;
-}
-@keyframes addToBasketAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-#sellProducts #products div .productsName .buttons {
-  width: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
-#sellProducts #products div .productsName .buttons button {
-  padding: 10px 15px 10px 15px;
-  border-radius: 50%;
-  font-size: 18px;
-  border: 1px solid black;
-  background-color: transparent;
-  transition: 0.3s all session;
-  animation: addToBasketAnimation 0.5s ease;
-}
-#sellProducts #products div .productsName .buttons button:hover {
-  transform: scale(1.2);
-  color: red;
-}
-#sellProducts #products div .productsName .buttons button i {
-  color: black;
-}
-#sellProducts #products div .productsName .buttons button i:hover {
-  color: red;
-}
-#sellProducts #products div .productsName .buttons .basket {
-  padding: 15px 60px 15px 60px;
-  border-radius: 10px;
-  border: 1px solid black;
-  color: white;
-  background-color: #000;
-  transition: 0.3s all session;
-  font-weight: 500;
-  font-family: poppins;
-  /* Animasyon Stilleri */
-  animation: addToBasketAnimation 0.5s ease; /* 0.5 saniye süren, kolay bir geçiş */
-}
-#sellProducts #products div .productsName .buttons .basket:hover {
-  color: #fff;
-  transform: scale(1.2);
-  background-color: #000;
-}
-
-/* SCSS Stilleri */
-/* Stil Eklemeleri */
-footer {
-  width: 100%;
-  min-height: 500px;
-  background-color: #000;
-}
-footer .allShopUs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .allShopUs .shopUs {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .allShopUs .shopUs h6 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 50px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
-}
-footer .allShopUs .shopUs p {
-  width: 100%;
-  font-size: 14px;
-  color: white;
-}
-footer .allShopUs .shopUs p:hover {
-  text-decoration: underline;
-}
-footer .allShopUs .shopUs p a {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  color: #fff;
-  text-decoration: none;
-}
-footer .allShopUs .shopUs p a:hover {
-  text-decoration: underline;
-}
-footer .followUs {
-  width: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .followUs h6 {
-  line-height: 70px;
-  font-size: 19px;
-  color: #fff;
-}
-footer .followUs .icon {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-footer .followUs .icon i {
-  color: #fff;
-  font-size: 17px;
-}
-footer .followUs .icon i:hover {
-  background-color: #595959;
-  padding: 10px 12px 10px 12px;
-  border-radius: 50%;
-}
-footer .footerImgLogo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  min-height: 130px;
-}
-footer .footerText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-footer .footerText ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-footer .footerTexts {
-  width: 90%;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body.dark-theme {
   background-color: #000000;
   color: white;
@@ -3295,7 +5067,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 1620px;
+  left: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -3336,7 +5108,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -3360,9 +5132,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -3378,6 +5246,30 @@ header nav .navMenu .dropdown button {
 }
 header nav .navMenu .dropdown button:hover {
   background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 992px) {
@@ -3851,7 +5743,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 1620px;
+  left: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -3892,7 +5784,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -3916,9 +5808,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -4129,90 +6117,122 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#bagProduct {
+#sellProducts {
   width: 100%;
-  min-height: 400vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-#bagProduct .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100px;
-  padding-top: 20px;
-}
-#bagProduct .title h1 {
-  min-height: 50px;
-  line-height: 50px;
-  font-size: 70px;
-  font-family: poppins;
-  font-weight: 800;
-}
-#bagProduct #product {
-  width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#bagProduct #product .boxDiv div {
-  margin-bottom: 20px;
-  transition: width 2s height 3s;
-  min-height: 350px;
-}
-#bagProduct #product .boxDiv div h5 {
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 20px;
-  font-family: poppins;
+#sellProducts #products div {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
 }
-#bagProduct #product .boxDiv div a .image-container {
+#sellProducts #products div .image-container {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-#bagProduct #product .boxDiv div a .image-container .animated-image {
+#sellProducts #products div .image-container .animated-image {
   width: 100%;
   min-height: auto;
   object-fit: cover;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  margin-bottom: 20px;
 }
-#bagProduct #product .boxDiv div a .image-container:hover .animated-image {
+#sellProducts #products div .image-container:hover .animated-image {
   transform: scale(1.2); /* 1.2 kat büyüme */
   opacity: 0.8; /* %80 görünürlük */
 }
-#bagProduct #product .boxDiv div span {
-  padding-top: 7px;
-  font-size: 13px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div p {
+#sellProducts #products div .productsName {
   padding-top: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  min-height: 637px;
   width: 100%;
+  padding-left: 20px;
+}
+#sellProducts #products div .productsName h5 {
+  font-size: 46px;
+  line-height: 28px;
+  font-family: poppins;
+  min-height: 40px;
+  font-weight: 400;
+}
+#sellProducts #products div .productsName span {
+  font-size: 20px;
+  font-family: sans-serif;
+  min-height: 50px;
+  font-family: poppins;
+}
+#sellProducts #products div .productsName .offer {
+  font-size: 15px;
+  font-family: poppins;
+  min-height: 140px;
+}
+#sellProducts #products div .productsName p {
+  font-size: 30px;
+  font-family: poppins;
+  color: red;
+  min-height: 40px;
+}
+@keyframes addToBasketAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#sellProducts #products div .productsName .buttons {
+  width: 100%;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+#sellProducts #products div .productsName .buttons button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  border: 1px solid black;
+  background-color: transparent;
+  transition: 0.3s all session;
+  animation: addToBasketAnimation 0.5s ease;
+}
+#sellProducts #products div .productsName .buttons button:hover {
+  transform: scale(1.2);
   color: red;
 }
-#bagProduct #product .boxDiv div p a {
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 600;
+#sellProducts #products div .productsName .buttons button i {
+  color: black;
+}
+#sellProducts #products div .productsName .buttons button i:hover {
   color: red;
 }
-#bagProduct #product .boxDiv div:hover {
-  width: 100%;
-  height: 400px;
+#sellProducts #products div .productsName .buttons .basket {
+  padding: 15px 60px 15px 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  background-color: #000;
+  transition: 0.3s all session;
+  font-weight: 500;
+  font-family: poppins;
+  /* Animasyon Stilleri */
+  animation: addToBasketAnimation 0.5s ease; /* 0.5 saniye süren, kolay bir geçiş */
+}
+#sellProducts #products div .productsName .buttons .basket:hover {
+  color: #fff;
+  transform: scale(1.2);
+  background-color: #000;
 }
 
 footer {
@@ -4487,7 +6507,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 1620px;
+  left: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -4528,7 +6548,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -4552,9 +6572,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -4765,63 +6881,98 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#bagProduct {
-  width: 100%;
-  min-height: 360vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#bagProduct #product {
-  width: 100%;
-  min-height: 350vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div {
-  transition: width 2s height 3s;
-  min-height: 538px;
-}
-#bagProduct #product .boxDiv div h5 {
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 20px;
-  font-family: poppins;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div a img {
+#shoesCarousel {
   width: 100%;
 }
-#bagProduct #product .boxDiv div span {
-  padding-top: 7px;
-  font-size: 13px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div p {
-  padding-top: 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: red;
-}
-#bagProduct #product .boxDiv div p a {
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  color: red;
-}
-#bagProduct #product .boxDiv div:hover {
-  width: 100%;
-  height: 490px;
+#shoesCarousel .corusel img {
+  height: 800px !important;
 }
 
+#shoesProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 460vh;
+}
+#shoesProduct .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#shoesProduct .titleSort {
+  width: 100%;
+  min-height: 700px;
+  top: 82px;
+  position: absolute;
+}
+#shoesProduct .titleSort select {
+  width: 100%;
+  min-height: 50px;
+}
+#shoesProduct #shoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shoesProduct #shoes .shoesBox div {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#shoesProduct #shoes .shoesBox div img {
+  width: 100%;
+}
+#shoesProduct #shoes .shoesBox div h5 {
+  min-height: 30px;
+  font-family: poppins;
+  font-weight: 600;
+  padding-top: 20px;
+}
+#shoesProduct #shoes .shoesBox div span {
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 40px;
+}
+#shoesProduct #shoes .shoesBox div p {
+  font-size: 20px;
+  font-family: poppins;
+  color: red;
+}
+#shoesProduct #shoes .shoesBox div p a {
+  text-decoration: none;
+  color: red;
+}
+
+@media screen and (max-width: 767px) {
+  #shoesProduct #shoes .shoesBox div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #shoesProduct {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #shoesProduct #shoes .shoesBox div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer {
   width: 100%;
   min-height: 500px;
@@ -4930,6 +7081,64 @@ footer .footerTexts {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark-mode .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-mode .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-mode nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-mode nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
+  color: #fff;
+}
+body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text h3 {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text p {
+  color: #fff;
+}
+body.dark-mode #theFashionphileLegacy .text a {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h3 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text h5 {
+  color: #fff;
+}
+body.dark-mode #aurPromiseToYou .text p {
+  color: #fff;
 }
 
 header {
@@ -5094,7 +7303,7 @@ header nav .navMenu .allMenuList li a {
 header nav .navMenu .allMenuList .designer:hover .list {
   display: block;
   top: 215px;
-  left: 1620px;
+  left: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -5135,7 +7344,7 @@ header nav .navMenu .allMenuList .bags .listBags {
 }
 header nav .navMenu .allMenuList .bags .listBags .style {
   padding-top: 20px;
-  min-height: 400px;
+  min-height: 200px;
 }
 header nav .navMenu .allMenuList .bags .listBags .style ul {
   list-style: none;
@@ -5159,9 +7368,105 @@ header nav .navMenu .allMenuList .accessoriesList .list {
   width: auto;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
+  min-height: 180px;
 }
 header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
   list-style: none;
 }
 header nav .navMenu .dropdown {
@@ -5372,1345 +7677,233 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#bagProduct {
+footer {
   width: 100%;
-  min-height: 450vh;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-#bagProduct .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100px;
-  padding-top: 20px;
-}
-#bagProduct .title h1 {
-  min-height: 50px;
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   line-height: 50px;
-  font-size: 70px;
-  font-family: poppins;
-  font-weight: 800;
-}
-#bagProduct #product {
+  display: flex;
+  align-items: start;
+  justify-content: start;
   width: 100%;
-  min-height: 250vh;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-#bagProduct #product .boxDiv div {
-  transition: width 2s height 3s;
-  min-height: 538px;
-  margin-bottom: 20px;
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
 }
-#bagProduct #product .boxDiv div h5 {
-  padding-top: 20px;
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* styles.scss */
+/* styles.css */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.body header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.body .sidebar {
+  background-color: #555;
+  color: white;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 60px;
+}
+.body .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.body .sidebar ul li {
+  padding: 10px;
+  border: 1px solid #333;
+}
+.body .sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+.body .admin-section {
+  margin-left: 220px;
+  padding: 20px;
+  gap: 40px;
+}
+.body .admin-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.body .admin-section table tr .delete {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-height: 80px;
+}
+.body .admin-section table tr .delete button {
+  padding: 7px 40px 7px 40px;
+  border: 1px solid red;
+  background-color: red;
+  color: #000;
   font-weight: 700;
-  font-size: 20px;
   font-family: poppins;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div a img {
-  width: 100%;
-}
-#bagProduct #product .boxDiv div span {
-  padding-top: 7px;
-  font-size: 13px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#bagProduct #product .boxDiv div p {
-  padding-top: 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: red;
-}
-#bagProduct #product .boxDiv div p a {
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  color: red;
-}
-#bagProduct #product .boxDiv div:hover {
-  width: 100%;
-  height: 490px;
-}
-
-footer {
-  width: 100%;
-  min-height: 500px;
-  background-color: #000;
-}
-footer .allShopUs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .allShopUs .shopUs {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .allShopUs .shopUs h6 {
   font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 50px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
 }
-footer .allShopUs .shopUs p {
-  width: 100%;
-  font-size: 14px;
+.body .admin-section table th,
+.body .admin-section table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.body .admin-section table th {
+  background-color: #333;
   color: white;
 }
-footer .allShopUs .shopUs p:hover {
-  text-decoration: underline;
-}
-footer .allShopUs .shopUs p a {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  color: #fff;
-  text-decoration: none;
-}
-footer .allShopUs .shopUs p a:hover {
-  text-decoration: underline;
-}
-footer .followUs {
-  width: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .followUs h6 {
-  line-height: 70px;
-  font-size: 19px;
-  color: #fff;
-}
-footer .followUs .icon {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-footer .followUs .icon i {
-  color: #fff;
-  font-size: 17px;
-}
-footer .followUs .icon i:hover {
-  background-color: #595959;
-  padding: 10px 12px 10px 12px;
-  border-radius: 50%;
-}
-footer .footerImgLogo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  min-height: 130px;
-}
-footer .footerText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-footer .footerText ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-footer .footerTexts {
+.body .addproduct {
   width: 90%;
+  min-height: 100px;
   display: flex;
   align-items: end;
-  justify-content: end;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
-}
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-body.dark-mode .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-mode .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-mode nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-mode nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text h3 {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text a {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h3 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h5 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text p {
-  color: #fff;
-}
-
-header {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2549019608);
-}
-header .title {
-  width: 100%;
-  min-height: 40px;
-  background-color: black;
-}
-header .title .findALocation {
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
   justify-content: start;
 }
-header .title .findALocation a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .title .buyNow {
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .buyNow a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .title .control {
-  width: 100%;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control .mode {
-  width: 20%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 5px;
-}
-header .title .control .mode button {
-  background-color: transparent;
-  border-color: white;
-}
-header .title .control .mode button i {
-  color: white;
-  font-size: 18px;
-}
-header .title .control ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 10px;
-}
-header .title .control ul li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control ul li a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .logoAndSearch {
-  width: 100%;
-  min-height: 80px;
-}
-header .logoAndSearch .logo {
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-header .logoAndSearch .logo .logoImg {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .logoAndSearch .logo img {
-  width: 100%;
-}
-header .logoAndSearch .headerIcons {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  min-height: 80px;
-}
-header .logoAndSearch .headerIcons .search {
-  width: 46%;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn {
-  width: 21%;
-  min-height: 50px;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn a {
-  width: 30%;
-  min-height: 50px;
-}
-header .logoAndSearch .headerIcons .search .btn a button {
-  border-radius: 0px;
-  background-color: white;
-  width: 42px;
-  min-height: 42px;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
-header nav .navMenu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  min-height: 60px;
-}
-header nav .navMenu .allMenuList {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  list-style-type: none;
-  width: 100%;
-}
-header nav .navMenu .allMenuList li a {
-  line-height: 63px;
-  color: black;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-}
-header nav .navMenu .allMenuList .designer:hover .list {
-  display: block;
-  top: 215px;
-  left: 160px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .designer .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .bags:hover .listBags {
-  display: block;
-  top: 215px;
-  left: 360px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .bags .listBags {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .bags .listBags .style {
-  padding-top: 20px;
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .bags .listBags .style ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .accessoriesList:hover .list {
-  display: block;
-  top: 215px;
-  left: 420px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
-  list-style: none;
-}
-header nav .navMenu .dropdown {
-  display: none;
-  width: 100%;
-}
-header nav .navMenu .dropdown button {
-  background-color: white;
-  border: none;
-  color: black;
-  border-radius: 0px;
-  font-size: 23px;
-}
-header nav .navMenu .dropdown button:hover {
-  background-color: white;
-}
-
-@media screen and (max-width: 992px) {
-  .logoAndSearch {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo .logoImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .headerIcons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav .container .allMenuList {
-    display: none;
-  }
-  header nav .container .dropdown {
-    display: block;
-  }
-  header nav .container .dropdown .dropdown-menu {
-    align-items: center;
-    padding: 15px;
-    flex-direction: column;
-    list-style-type: none;
-    width: 100%;
-  }
-  header nav .container .dropdown .dropdown-menu li a {
-    line-height: 63px;
-    color: black;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-  }
-  header nav .container .dropdown .dropdown-menu .designer:hover .list {
-    display: block;
-    top: 215px;
-    left: 160px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
-    display: block;
-    top: 215px;
-    left: 360px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
-    padding-top: 20px;
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
-    display: block;
-    top: 215px;
-    left: 420px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
-    list-style: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow {
-    display: none;
-  }
-  header .title .control {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 769px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 425px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .findALocation a {
-    font-size: 12px;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-  header .title .control {
-    width: 100%;
-  }
-  header .title .control ul {
-    width: 100%;
-  }
-  header .title .control ul li a {
-    font-size: 10px;
-  }
-}
-footer {
-  width: 100%;
-  min-height: 500px;
+.body .addproduct button {
+  padding: 10px 18px 10px 18px;
   background-color: #000;
-}
-footer .allShopUs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .allShopUs .shopUs {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .allShopUs .shopUs h6 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 50px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
-}
-footer .allShopUs .shopUs p {
-  width: 100%;
+  color: white;
+  font-weight: 700;
   font-size: 14px;
-  color: white;
 }
-footer .allShopUs .shopUs p:hover {
-  text-decoration: underline;
-}
-footer .allShopUs .shopUs p a {
+.body #addProductForm {
   width: 100%;
+  min-height: 100vh;
   display: flex;
-  align-items: start;
-  justify-content: start;
-  color: #fff;
-  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
-footer .allShopUs .shopUs p a:hover {
-  text-decoration: underline;
-}
-footer .followUs {
+.body #addProductForm #productForm {
   width: 100%;
-  min-height: 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.body #addProductForm #productForm .formline {
+  border-radius: 30px;
+  border: 2px solid black;
+  width: 50%;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-footer .followUs h6 {
-  line-height: 70px;
-  font-size: 19px;
-  color: #fff;
-}
-footer .followUs .icon {
-  width: 100%;
+.body #addProductForm #productForm .formline label {
+  width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-footer .followUs .icon i {
-  color: #fff;
   font-size: 17px;
-}
-footer .followUs .icon i:hover {
-  background-color: #595959;
-  padding: 10px 12px 10px 12px;
-  border-radius: 50%;
-}
-footer .footerImgLogo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  min-height: 130px;
-}
-footer .footerText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-footer .footerText ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-footer .footerTexts {
-  width: 90%;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
-}
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-body.dark-mode .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-mode .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-mode nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-mode nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text h3 {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text a {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h3 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h5 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text p {
-  color: #fff;
-}
-
-header {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2549019608);
-}
-header .title {
-  width: 100%;
-  min-height: 40px;
-  background-color: black;
-}
-header .title .findALocation {
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-header .title .findALocation a {
-  font-family: sans-serif;
-  font-size: 15px;
   font-weight: 500;
-  color: white;
-  text-decoration: none;
 }
-header .title .buyNow {
+.body #addProductForm #productForm .formline input {
   min-height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .buyNow a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .title .control {
-  width: 100%;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control .mode {
-  width: 20%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 5px;
-}
-header .title .control .mode button {
-  background-color: transparent;
-  border-color: white;
-}
-header .title .control .mode button i {
-  color: white;
-  font-size: 18px;
-}
-header .title .control ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 10px;
-}
-header .title .control ul li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .title .control ul li a {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-header .logoAndSearch {
-  width: 100%;
-  min-height: 80px;
-}
-header .logoAndSearch .logo {
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-header .logoAndSearch .logo .logoImg {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .logoAndSearch .logo img {
-  width: 100%;
-}
-header .logoAndSearch .headerIcons {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  min-height: 80px;
-}
-header .logoAndSearch .headerIcons .search {
-  width: 46%;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn {
-  width: 21%;
-  min-height: 50px;
-  margin-right: 20px;
-}
-header .logoAndSearch .headerIcons .search .btn a {
-  width: 30%;
-  min-height: 50px;
-}
-header .logoAndSearch .headerIcons .search .btn a button {
-  border-radius: 0px;
-  background-color: white;
-  width: 42px;
-  min-height: 42px;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
-header nav .navMenu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  min-height: 60px;
-}
-header nav .navMenu .allMenuList {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  list-style-type: none;
-  width: 100%;
-}
-header nav .navMenu .allMenuList li a {
-  line-height: 63px;
-  color: black;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-}
-header nav .navMenu .allMenuList .designer:hover .list {
-  display: block;
-  top: 215px;
-  left: 160px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .designer .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .designer .list .topDesinger ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .bags:hover .listBags {
-  display: block;
-  top: 215px;
-  left: 360px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-header nav .navMenu .allMenuList .bags .listBags {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .bags .listBags .style {
-  padding-top: 20px;
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .bags .listBags .style ul {
-  list-style: none;
-}
-header nav .navMenu .allMenuList .accessoriesList:hover .list {
-  display: block;
-  top: 215px;
-  left: 420px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list {
-  display: flex;
-  display: none;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories {
-  min-height: 400px;
-}
-header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
-  list-style: none;
-}
-header nav .navMenu .dropdown {
-  display: none;
-  width: 100%;
-}
-header nav .navMenu .dropdown button {
-  background-color: white;
-  border: none;
-  color: black;
-  border-radius: 0px;
-  font-size: 23px;
-}
-header nav .navMenu .dropdown button:hover {
-  background-color: white;
-}
-
-@media screen and (max-width: 992px) {
-  .logoAndSearch {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .logo .logoImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoAndSearch .container .headerIcons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 992px) {
-  header nav .container .allMenuList {
-    display: none;
-  }
-  header nav .container .dropdown {
-    display: block;
-  }
-  header nav .container .dropdown .dropdown-menu {
-    align-items: center;
-    padding: 15px;
-    flex-direction: column;
-    list-style-type: none;
-    width: 100%;
-  }
-  header nav .container .dropdown .dropdown-menu li a {
-    line-height: 63px;
-    color: black;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-  }
-  header nav .container .dropdown .dropdown-menu .designer:hover .list {
-    display: block;
-    top: 215px;
-    left: 160px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
-    display: block;
-    top: 215px;
-    left: 360px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
-    padding-top: 20px;
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
-    list-style: none;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
-    display: block;
-    top: 215px;
-    left: 420px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
-    display: flex;
-    display: none;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    width: auto;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
-    min-height: 400px;
-  }
-  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
-    list-style: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow {
-    display: none;
-  }
-  header .title .control {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 769px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 425px) {
-  header .title .findALocation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .title .findALocation a {
-    font-size: 12px;
-  }
-  header .title .buyNow a {
-    font-size: 12px;
-  }
-  header .title .control {
-    width: 100%;
-  }
-  header .title .control ul {
-    width: 100%;
-  }
-  header .title .control ul li a {
-    font-size: 10px;
-  }
-}
-footer {
-  width: 100%;
-  min-height: 500px;
-  background-color: #000;
-}
-footer .allShopUs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-footer .allShopUs .shopUs {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .allShopUs .shopUs h6 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 50px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
-}
-footer .allShopUs .shopUs p {
-  width: 100%;
-  font-size: 14px;
-  color: white;
-}
-footer .allShopUs .shopUs p:hover {
-  text-decoration: underline;
-}
-footer .allShopUs .shopUs p a {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  color: #fff;
-  text-decoration: none;
-}
-footer .allShopUs .shopUs p a:hover {
-  text-decoration: underline;
-}
-footer .followUs {
-  width: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .followUs h6 {
-  line-height: 70px;
-  font-size: 19px;
-  color: #fff;
-}
-footer .followUs .icon {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-footer .followUs .icon i {
-  color: #fff;
-  font-size: 17px;
-}
-footer .followUs .icon i:hover {
-  background-color: #595959;
-  padding: 10px 12px 10px 12px;
-  border-radius: 50%;
-}
-footer .footerImgLogo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  min-height: 130px;
-}
-footer .footerText {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-footer .footerText ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-footer .footerTexts {
-  width: 90%;
-  display: flex;
-  align-items: end;
-  justify-content: end;
+  width: 50%;
 }

@@ -33,7 +33,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12">
                         <div class="control">
                             <ul>
-                                <li><a href="./sell.html">Sell</a></li>
+                                <li><a href="./admin.html">Admin</a></li>
                                 <li><a href="./wishList.html">Wishlist</a></li>
                                 <li><a href="./addToCart.html">Shopping Bag <span id="cartCount">0</span></a></li>
                             </ul>
@@ -226,10 +226,114 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="./shoes.html"></a>Shoes</li>
-                        <li>Jewelry</li>
-                        <li>Watches</li>
-                        <li>Sale</li>
+                        <li class="shoes"><a href="./shoes.html">Shoes</a>
+                            <div class="list">
+                                <div class="allShoes">
+                                    <ul>
+                                        <li>
+                                            <h6>Shoes</h6>
+                                        </li>
+                                        <li>Shop All Shoes</li>
+                                        <li>Boots & Booties</li>
+                                        <li>Flats</li>
+                                        <li>Pumps</li>
+                                        <li> Sandals</li>
+                                        <li> Sneakers</li>
+                                    </ul>
+                                </div>
+                                <div class="allShoes">
+                                    <ul>
+                                        <li>
+                                            <h6>Top Designers</h6>
+                                        </li>
+                                        <li> Chanel</li>
+                                        <li> Christian Louboutin</li>
+                                        <li> Gucci</li>
+                                        <li> Hermes</li>
+                                        <li> Louis Vuitton</li>
+                                        <li>Valentino Garavani</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jewelryList"><a href="#">Jewelry</a>
+                            <div class="list">
+                                <div class="jewelry">
+                                    <ul>
+                                        <li>
+                                            <h6>Jewelry</h6>
+                                        </li>
+                                        <li>Shop All Jewelry</li>
+                                        <li>Bracelets</li>
+                                        <li>Earrings</li>
+                                        <li> Necklaces</li>
+                                        <li> Rings</li>
+                                        <li> Fine Jewelry</li>
+                                    </ul>
+                                </div>
+                                <div class="jewelry">
+                                    <ul>
+                                        <li>
+                                            <h6>Top Designers</h6>
+                                        </li>
+                                        <li>Cartier</li>
+                                        <li>Chanel</li>
+                                        <li>David Yurman</li>
+                                        <li>Hermes</li>
+                                        <li>Tiffany</li>
+                                        <li>Van Cleef & Arpels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="whatchList"><a href="#">Watches</a>
+                            <div class="list">
+                                <div class="Watches">
+                                    <ul>
+                                        <li>
+                                            <h6>Watches</h6>
+                                        </li>
+                                        <li>Shop All Watches</li>
+                                        <li>Fashion Watches</li>
+                                        <li> Luxury Watches</li>
+                                        <li>Watches Under Warranty</li>
+                                    </ul>
+                                </div>
+                                <div class="Watches">
+                                    <ul>
+                                        <li>
+                                            <h6>Top Designers</h6>
+                                        </li>
+                                        <li>Audemars Piguet</li>
+                                        <li>Cartier</li>
+                                        <li> Hublot</li>
+                                        <li> Omega</li>
+                                        <li> Patek Philippe</li>
+                                        <li>Rolex</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="saleList"><a href="#">Sale</a>
+                            <div class="list">
+                                <div class="sale">
+                                    <ul>
+                                        <li>
+                                            <h6>Sale</h6>
+                                        </li>
+                                        <li> Shop all sale</li>
+                                        <li>5% off</li>
+                                        <li> 10% off</li>
+                                    </ul>
+                                </div>
+                                <div class="sale">
+                                    <ul>
+                                        <li> 20% off</li>
+                                        <li>30% off</li>
+                                        <li>Last call</li>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown"
@@ -383,7 +487,7 @@
                             <li><a href="./sell.html">Sale</a></li>
                         </ul>
                     </div>
-                    <div class="divRegister"> 
+                    <div class="divRegister">
                         <span id="userName">USER</span><i class="fa-solid fa-user"></i>
                         <button onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                     </div>
@@ -392,6 +496,36 @@
         </nav>
     </header>
     <main>
+<!-- section 2  -->
+<section id="bagsCarousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner corusel">
+            <div class="carousel-item active " data-bs-interval="10000">
+                <img src="./assets/images/bagsPageImg/MICROBONBONMNA_AA0009_FRONT.jpg"
+                    class="d-block w-100 h3" alt="bags">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/images/bagsPageImg/a52fa81bae7cc6c64e004e7529d50565.jpg"
+                    class="d-block w-100" alt="bags">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/bagsPageImg/de7b900bea8b39e3e383ed584e211b7b.jpg"
+                    class="d-block w-100" alt="bags">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+        <!-- section 2 -->
         <section id="bagProduct">
             <div class="container">
                 <div class="row">
@@ -399,6 +533,8 @@
                         <div class="title">
                             <h1>Bags</h1>
                         </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-12">
                         <div class="titleSort">
                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                 <div class="btn-group" role="group">
@@ -416,7 +552,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-12">
                         <div id="product" class="row">
 
                         </div>

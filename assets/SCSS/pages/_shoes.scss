@@ -263,7 +263,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 1620px;
+                            left: 320px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -315,7 +315,7 @@ header {
 
                         .style {
                             padding-top: 20px;
-                            min-height: 400px;
+                            min-height: 200px;
 
                             ul {
                                 list-style: none;
@@ -347,7 +347,139 @@ header {
                         width: auto;
 
                         .accessories {
-                            min-height: 400px;
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .shoes {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 420px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .allShoes {
+                            min-height: 200px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .jewelryList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 540px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .jewelry {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .whatchList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 500px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .Watches {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .saleList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 650px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .sale {
+                            min-height: 180px;
 
                             ul {
                                 list-style: none;
@@ -659,79 +791,132 @@ header {
         }
     }
 }
-// section
 
-#bagProduct {
+// section carousel
+
+#shoesCarousel{
     width: 100%;
-    min-height: 360vh;
+    .corusel{
+       img{
+         height :800px!important;
+       } 
+    }
+}
+
+
+
+// section
+#shoesProduct {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 460vh;
 
-    #product {
+    .title {
         width: 100%;
-        min-height: 350vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+    }
+
+    .titleSort{
+        width: 100%;
+        min-height: 700px;
+        top: 82px;
+        position: absolute;
+
+        select{
+            width: 100%;
+            min-height: 50px;
+        }
+    }
+    #shoes {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .boxDiv {
+        .shoesBox {
             div {
-                transition: width 2s height 3s;
-                min-height: 538px;
+                min-height: 500px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
-                h5 {
-                    padding-top: 20px;
-                    font-weight: 700;
-                    font-size: 20px;
-                    font-family: poppins;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                img {
+                    width: 100%;
                 }
 
-                a {
-                    img {
-                        width: 100%;
-                    }
-
+                h5 {
+                    min-height: 30px;
+                    font-family: poppins;
+                    font-weight: 600;
+                    padding-top: 20px;
                 }
 
                 span {
-                    padding-top: 7px;
-                    font-size: 13px;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
+                    font-family: poppins;
+                    font-weight: 400;
+                    font-size: 14px;
+                    min-height: 40px;
                 }
 
                 p {
-                    padding-top: 20px;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: poppins;
                     color: red;
 
                     a {
-                        font-size: 20px;
                         text-decoration: none;
-                        font-weight: 600;
                         color: red;
 
                     }
                 }
-
-                &:hover {
-                    width: 100%;
-                    height: 490px;
-                }
             }
         }
-
     }
 }
+
+
+@media screen and (max-width:767px){
+ #shoesProduct{
+    #shoes{
+        .shoesBox{
+            div{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+ }   
+}
+
+
+@media screen and (max-width:600px){
+    #shoesProduct{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       #shoes{
+  
+           .shoesBox{
+               div{
+                   width: 100%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+               }
+           }
+       }
+    }  
+} 
 
 
 

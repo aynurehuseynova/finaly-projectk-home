@@ -110,10 +110,8 @@ body {
 
 // *****\\\\
 
-
 header {
     width: 100%;
-    border: 1px solid #00000041;
 
     .title {
         width: 100%;
@@ -206,11 +204,11 @@ header {
 
     .logoAndSearch {
         width: 100%;
-        min-height: 80px;
+        min-height: 100px;
 
         .logo {
             width: 100%;
-            min-height: 80px;
+            min-height: 100px;
             display: flex;
             align-items: center;
             justify-content: start;
@@ -220,11 +218,16 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                img {
+                    width: 100%;
+                }
             }
 
-            img {
-                width: 100%;
+            .logoText {
+                display: none;
             }
+
         }
 
         .headerIcons {
@@ -232,7 +235,6 @@ header {
             display: flex;
             align-items: center;
             justify-content: end;
-            min-height: 80px;
 
             .search {
                 width: 46%;
@@ -276,7 +278,7 @@ header {
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            min-height: 60px;
+            min-height: 70px;
 
             .allMenuList {
                 display: flex;
@@ -302,7 +304,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 160px;
+                            left: 320px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -354,7 +356,7 @@ header {
 
                         .style {
                             padding-top: 20px;
-                            min-height: 400px;
+                            min-height: 200px;
 
                             ul {
                                 list-style: none;
@@ -386,7 +388,139 @@ header {
                         width: auto;
 
                         .accessories {
-                            min-height: 400px;
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .shoes {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 420px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .allShoes {
+                            min-height: 200px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .jewelryList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 540px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .jewelry {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+           
+                .whatchList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 500px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .Watches {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .saleList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left:650px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .sale {
+                            min-height: 180px;
 
                             ul {
                                 list-style: none;
@@ -411,6 +545,34 @@ header {
                     &:hover {
                         background-color: white;
                     }
+                }
+            }
+
+            .divRegister {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+                padding-right: 20px;
+
+                #userName {
+                    width: 30%;
+                    gap: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    margin-right: 20px;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+
+                button {
+                    padding: 7px;
+                    border-style: none;
+                    background-color: transparent;
                 }
             }
         }

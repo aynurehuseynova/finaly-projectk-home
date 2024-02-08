@@ -659,32 +659,45 @@ header {
     }
 }
 
-
-#bagProduct {
+// section 1
+#bagsCarousel{
     width: 100%;
-    min-height: 400vh;
+    .corusel{
+       img{
+         height :760px!important;
+       } 
+    }
+}
+
+
+
+// section 2
+#bagProduct {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    
+    width: 100%;
+    min-height: 450vh;
+
     .title {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        min-height: 100px;
-        padding-top: 20px;
-
-        h1 {
-            min-height: 50px;
-            line-height: 50px;
-            font-size: 70px;
-            font-family: poppins;
-            font-weight: 800;
-        }
+        min-height: 150px;
     }
 
+    .titleSort{
+        width: 100%;
+        min-height: 700px;
+        top: 82px;
+        position: absolute;
+
+        select{
+            width: 100%;
+            min-height: 50px;
+        }
+    }
     #product {
         width: 100%;
         display: flex;
@@ -693,77 +706,46 @@ header {
 
         .boxDiv {
             div {
-                margin-bottom: 20px;
-                transition: width 2s height 3s;
-                min-height:350px;
+                min-height: 500px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
-                h5 {
-                    padding-top: 20px;
-                    font-weight: 700;
-                    font-size: 20px;
-                    font-family: poppins;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                img {
+                    width: 100%;
                 }
 
-                a {
-                    .image-container {
-                        position: relative;
-                        overflow: hidden;
-                        width: 100%;
-                      
-                        .animated-image {
-                          width: 100%;
-                          min-height: auto;
-                          object-fit: cover;
-                          transition: transform 0.5s ease, opacity 0.5s ease;
-                          margin-bottom: 20px;
-                        }
-                        &:hover .animated-image {
-                          transform: scale(1.2); /* 1.2 kat büyüme */
-                          opacity: 0.8; /* %80 görünürlük */
-                        }
-                      }
+                h5 {
+                    min-height: 30px;
+                    font-family: poppins;
+                    font-weight: 600;
+                    padding-top: 20px;
                 }
 
                 span {
-                    padding-top: 7px;
-                    font-size: 13px;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
+                    font-family: poppins;
+                    font-weight: 400;
+                    font-size: 14px;
+                    min-height: 40px;
                 }
 
                 p {
-                    padding-top: 20px;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: poppins;
                     color: red;
 
                     a {
-                        font-size: 20px;
                         text-decoration: none;
-                        font-weight: 600;
                         color: red;
 
                     }
                 }
-
-                &:hover {
-                    width: 100%;
-                    height: 400px;
-                }
             }
         }
-
     }
 }
-
-
 
 footer {
     width: 100%;

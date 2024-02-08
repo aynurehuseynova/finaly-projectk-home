@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let productContainer = document.getElementById('product');
+    let productContainer = document.getElementById('products');
 
     fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable')
       .then(response => response.json())

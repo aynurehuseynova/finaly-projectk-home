@@ -16,12 +16,13 @@ function displayCart() {
   cartContainer.innerHTML = `
     <h2>Sepetiniz</h2>
     <ul>
-      ${cart.map(item => `
+      ${cart.map((item, index) => `
         <li>
           <img src="${item.image}" alt="${item.name}">
           <p>${item.name}</p>
           <p>Adet: ${item.quantity}</p>
           <p>Fiyat: $${item.price}</p>
+          <button onclick="removeSingleItem(${index})">Tek Bir Ürünü Sil</button>
         </li>`).join('')}
     </ul>
     <p>Toplam: $${calculateTotal(cart)}</p>
@@ -35,5 +36,22 @@ function calculateTotal(cart) {
 
 function clearCart() {
   localStorage.removeItem("cart");
+  displayCart();
+}
+
+function removeSingleItem(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Seçilen index'teki ürünün bir adetini sepetten kaldır
+  if (cart[index].quantity > 1) {
+    cart[index].quantity--;
+  } else {
+    cart.splice(index, 1);
+  }
+
+  // Güncellenmiş sepeti localStorage'e kaydet
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Sepeti güncelle
   displayCart();
 }

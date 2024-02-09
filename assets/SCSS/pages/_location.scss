@@ -4,112 +4,6 @@
     box-sizing: border-box;
 }
 
-//** dark-light mode
-body {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.5s, color 0.5s;
-
-    &.dark-mode {
-        background-color: #000;
-        color: #fff;
-        .logoAndSearch {
-            .logo {
-                .logoImg {
-                    display: none;
-                }
-
-                .logoText {
-                    display: block;
-                }
-
-            }
-        }
-
-        nav {
-            .navMenu {
-                .allMenuList {
-                    li {
-                        a {
-                            color: #fff;
-                        }
-                    }
-
-                    .designer {
-                        .list {
-                            background-color: #000;
-
-                        }
-                    }
-
-                    .bags {
-                        .listBags {
-                            background-color: #000;
-                        }
-                    }
-
-                    .accessoriesList {
-                        .list {
-                            background-color: #000;
-                        }
-                    }
-
-                }
-            }
-        }
-        #attainableLuxuryCuratedForyou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-        #shopFashionphileImg{
-            .attainableLuxuryCuratedForyou{
-              .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-              }  
-            }
-        }
-        #theFashionphileLegacy{
-            .text{
-                h3{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-                a{
-                    color: #fff;
-                }
-            }
-        }
-        #aurPromiseToYou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                h5{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-
-// *****\\\\
-
 header {
     width: 100%;
 
@@ -304,7 +198,9 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 320px;
+                            left: 300px;
+                            z-index: 1;
+
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -336,6 +232,7 @@ header {
                     &:hover {
                         .listBags {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 360px;
                             position: absolute;
@@ -371,6 +268,7 @@ header {
                             display: block;
                             top: 215px;
                             left: 420px;
+                            z-index: 1;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -402,6 +300,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 420px;
                             position: absolute;
@@ -435,6 +334,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 540px;
                             position: absolute;
@@ -463,11 +363,12 @@ header {
 
                     }
                 }
-           
+
                 .whatchList {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 500px;
                             position: absolute;
@@ -501,8 +402,9 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
-                            left:650px;
+                            left: 650px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -625,6 +527,7 @@ header {
 
                 .dropdown {
                     display: block;
+                    z-index: 1;
 
                     .dropdown-menu {
                         align-items: center;
@@ -650,6 +553,7 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 160px;
                                     position: absolute;
@@ -683,6 +587,7 @@ header {
                             &:hover {
                                 .listBags {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 360px;
                                     position: absolute;
@@ -716,6 +621,7 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 420px;
                                     position: absolute;
@@ -833,12 +739,61 @@ header {
     }
 }
 
-#addToCart{
+
+#location {
     width: 100%;
-    min-height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .headerLocation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 170px;
+
+        h1 {
+            font-family: poppins;
+            font-weight: 700;
+            font-size: 50px;
+        }
+    }
+
+    .shopingImg {
+        width: 100%;
+        min-height: 250px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
 }
 
-// footer
+#map {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mapCart {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+
+// foolter
 
 footer {
     width: 100%;

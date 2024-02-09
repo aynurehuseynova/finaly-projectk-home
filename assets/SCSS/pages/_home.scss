@@ -343,7 +343,7 @@ header {
             .allMenuList {
                 display: flex;
                 align-items: center;
-                gap: 35px;
+                gap: 21px;
                 list-style-type: none;
                 width: 100%;
 
@@ -365,6 +365,8 @@ header {
                             display: block;
                             top: 215px;
                             left: 300px;
+                            z-index: 1;
+
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -383,7 +385,6 @@ header {
 
                         .topDesinger {
                             min-height: 400px;
-
                             ul {
                                 list-style: none;
                             }
@@ -396,6 +397,7 @@ header {
                     &:hover {
                         .listBags {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 360px;
                             position: absolute;
@@ -431,6 +433,7 @@ header {
                             display: block;
                             top: 215px;
                             left: 420px;
+                            z-index: 1;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -462,6 +465,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 420px;
                             position: absolute;
@@ -495,6 +499,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 540px;
                             position: absolute;
@@ -528,6 +533,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 500px;
                             position: absolute;
@@ -561,6 +567,7 @@ header {
                     &:hover {
                         .list {
                             display: block;
+                            z-index: 1;
                             top: 215px;
                             left: 650px;
                             position: absolute;
@@ -685,6 +692,7 @@ header {
 
                 .dropdown {
                     display: block;
+                    z-index: 1;
 
                     .dropdown-menu {
                         align-items: center;
@@ -710,6 +718,7 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 160px;
                                     position: absolute;
@@ -743,6 +752,7 @@ header {
                             &:hover {
                                 .listBags {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 360px;
                                     position: absolute;
@@ -776,6 +786,7 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
+                                    z-index: 1;
                                     top: 215px;
                                     left: 420px;
                                     position: absolute;
@@ -1318,12 +1329,16 @@ header {
         button {
             padding: 5px 20px 5px 20px;
             font-size: 13px;
+            min-height: 40px;
+            border: 1px solid black;
+            transition: 0.4s ease;
             font-weight: 700;
             background-color: white;
 
             &:hover {
                 color: #fff;
                 background-color: #595959;
+                border: none;
             }
         }
     }

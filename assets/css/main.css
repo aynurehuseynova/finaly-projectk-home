@@ -1633,11 +1633,19 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#bagsCarousel {
+#bag {
   width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/bagsPageImg/1200x330-LL-Bags.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#bagsCarousel .corusel img {
-  height: 760px !important;
+#bag .text h1 {
+  font-family: poppins;
+  font-size: 40px;
 }
 
 #bagProduct {
@@ -1645,7 +1653,7 @@ header nav .navMenu .divRegister button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 450vh;
+  min-height: 320vh;
 }
 #bagProduct .title {
   width: 100%;
@@ -1654,15 +1662,26 @@ header nav .navMenu .divRegister button {
   justify-content: center;
   min-height: 150px;
 }
-#bagProduct .titleSort {
+#bagProduct .sortSearchByName {
   width: 100%;
-  min-height: 700px;
-  top: 82px;
-  position: absolute;
+  min-height: 120px;
 }
-#bagProduct .titleSort select {
+#bagProduct .sortSearchByName #sortSelect {
+  width: 40%;
+  min-height: 40px;
+}
+#bagProduct .sortSearchByName #sortSelect select {
   width: 100%;
   min-height: 50px;
+}
+#bagProduct .sortSearchByName .searchByName {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+#bagProduct .sortSearchByName .searchByName .group {
+  width: 50%;
 }
 #bagProduct #product {
   width: 100%;
@@ -1670,7 +1689,7 @@ header nav .navMenu .divRegister button {
   align-items: center;
   justify-content: center;
 }
-#bagProduct #product .boxDiv div {
+#bagProduct #product .bagBox div {
   min-height: 500px;
   width: 100%;
   display: flex;
@@ -1678,31 +1697,45 @@ header nav .navMenu .divRegister button {
   justify-content: center;
   flex-direction: column;
 }
-#bagProduct #product .boxDiv div img {
+#bagProduct #product .bagBox div img {
   width: 100%;
 }
-#bagProduct #product .boxDiv div h5 {
+#bagProduct #product .bagBox div h5 {
   min-height: 30px;
   font-family: poppins;
   font-weight: 600;
   padding-top: 20px;
 }
-#bagProduct #product .boxDiv div span {
+#bagProduct #product .bagBox div span {
   font-family: poppins;
   font-weight: 400;
   font-size: 14px;
   min-height: 40px;
 }
-#bagProduct #product .boxDiv div p {
+#bagProduct #product .bagBox div p {
   font-size: 20px;
   font-family: poppins;
   color: red;
 }
-#bagProduct #product .boxDiv div p a {
+#bagProduct #product .bagBox div p a {
   text-decoration: none;
   color: red;
 }
 
+@media screen and (max-width: 986px) {
+  #bagProduct .sortSearchByName .searchByName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #bagProduct .sortSearchByName .titleSort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer {
   width: 100%;
   min-height: 500px;
@@ -3188,16 +3221,24 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#acsessuaresProduct {
+#accessories {
   width: 100%;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/accsessoriesPageImg/sample-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-#acsessuaresProduct #carousel img {
-  min-height: 400px !important;
+#accessories .text h1 {
+  font-family: poppins;
+  line-height: 60px;
 }
 
 #acsessuaresProduct {
   width: 100%;
-  min-height: 450vh;
+  min-height: 220vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3211,25 +3252,46 @@ header nav .navMenu .divRegister button {
   padding-top: 20px;
 }
 #acsessuaresProduct .title h1 {
-  min-height: 50px;
+  min-height: 40px;
   line-height: 50px;
   font-size: 70px;
   font-family: poppins;
   font-weight: 800;
 }
+#acsessuaresProduct .sortSearchByName {
+  width: 100%;
+  min-height: 120px;
+}
+#acsessuaresProduct .sortSearchByName #sortSelect {
+  width: 40%;
+  min-height: 40px;
+}
+#acsessuaresProduct .sortSearchByName #sortSelect select {
+  width: 100%;
+  min-height: 50px;
+}
+#acsessuaresProduct .sortSearchByName .searchByName {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+#acsessuaresProduct .sortSearchByName .searchByName .group {
+  width: 50%;
+}
 #acsessuaresProduct #products {
   width: 100%;
-  min-height: 250vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#acsessuaresProduct #products .boxDiv div {
+#acsessuaresProduct #products .accessoryBox div {
   transition: width 2s height 3s;
-  min-height: 538px;
+  min-height: 600px;
   margin-bottom: 20px;
 }
-#acsessuaresProduct #products .boxDiv div h5 {
+#acsessuaresProduct #products .accessoryBox div h5 {
   padding-top: 20px;
   font-weight: 700;
   font-size: 20px;
@@ -3238,17 +3300,17 @@ header nav .navMenu .divRegister button {
   align-items: center;
   justify-content: center;
 }
-#acsessuaresProduct #products .boxDiv div a img {
+#acsessuaresProduct #products .accessoryBox div a img {
   width: 100%;
 }
-#acsessuaresProduct #products .boxDiv div span {
+#acsessuaresProduct #products .accessoryBox div span {
   padding-top: 7px;
   font-size: 13px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-#acsessuaresProduct #products .boxDiv div p {
+#acsessuaresProduct #products .accessoryBox div p {
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -3257,17 +3319,31 @@ header nav .navMenu .divRegister button {
   font-weight: 600;
   color: red;
 }
-#acsessuaresProduct #products .boxDiv div p a {
+#acsessuaresProduct #products .accessoryBox div p a {
   font-size: 20px;
   text-decoration: none;
   font-weight: 600;
   color: red;
 }
-#acsessuaresProduct #products .boxDiv div:hover {
+#acsessuaresProduct #products .accessoryBox div:hover {
   width: 100%;
   height: 490px;
 }
 
+@media screen and (max-width: 992px) {
+  #acsessuaresProduct .searchByName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #acsessuaresProduct .titleSort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer {
   width: 100%;
   min-height: 500px;
@@ -4889,36 +4965,6 @@ body.dark-theme nav .navMenu .allMenuList .bags .listBags {
 body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
   background-color: #000;
 }
-body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText h4 {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText p {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText a {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide p {
-  color: #fff;
-}
-body.dark-theme #shopInPerson .imagesShopInPerson a {
-  color: #fff;
-}
 
 header {
   width: 100%;
@@ -5456,36 +5502,125 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#form {
+#register {
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/images/registerPage/LP_Hero.jpg);
 }
-#form .singUp {
+#register .allRegisterForm {
   width: 100%;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#form .singUp h1 {
-  width: 100%;
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#register .allRegisterForm h1 {
+  min-height: 90px;
   font-family: poppins;
-  font-size: 60px;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 50px;
 }
-#form .singUp form {
+#register .allRegisterForm #registerForm {
   width: 100%;
-  background-color: aqua;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  gap: 10px;
+}
+#register .allRegisterForm #registerForm label {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: poppins;
+  width: 33%;
+}
+#register .allRegisterForm #registerForm input {
+  border: none;
+  width: 35%;
+  min-height: 45px;
+}
+#register .allRegisterForm #registerForm p {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: poppins;
+}
+#register .allRegisterForm #registerForm p a {
+  font-family: poppins;
+  font-weight: 700;
+  color: red;
+  text-decoration: none;
+}
+#register .allRegisterForm #registerForm button {
+  width: 220px;
+  min-height: 45px;
+  border: 2px solid black;
+  background-color: transparent;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: poppins;
+  transition: 0.3s all ease;
+}
+#register .allRegisterForm #registerForm button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
+@media screen and (max-width: 900px) {
+  #register .allRegisterForm h1 {
+    font-size: 45px;
+  }
+  #register .allRegisterForm #registerForm label {
+    font-size: 13px;
+  }
+  #register .allRegisterForm #registerForm p {
+    font-size: 12px;
+  }
+  #register .allRegisterForm #registerForm button {
+    width: 120px;
+    min-height: 45px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #register .allRegisterForm h1 {
+    font-size: 40px;
+  }
+  #register .allRegisterForm #registerForm label {
+    font-size: 11px;
+  }
+  #register .allRegisterForm #registerForm p {
+    font-size: 11px;
+  }
+  #register .allRegisterForm #registerForm button {
+    width: 100px;
+    min-height: 45px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #register .allRegisterForm {
+    font-size: 35px;
+  }
+  #register .allRegisterForm #registerForm label {
+    font-size: 9px;
+  }
+  #register .allRegisterForm #registerForm p {
+    font-size: 9px;
+  }
+  #register .allRegisterForm #registerForm button {
+    width: 90px;
+    min-height: 45px;
+    font-size: 12px;
+  }
+}
 footer {
   width: 100%;
   min-height: 500px;
@@ -6896,11 +7031,32 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
-#shoesCarousel {
+#shoesCart {
   width: 100%;
+  min-height: 400px;
+  align-items: center;
+  display: flex;
+  background-image: url(/assets/images/shoesPageimg/Logo-Joya.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#shoesCarousel .corusel img {
-  height: 800px !important;
+#shoesCart .fontColor {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.2588235294);
+}
+#shoesCart .fontColor .text {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shoesCart .fontColor .text h1 {
+  color: #fff;
+  font-family: poppins;
+  line-height: 30px;
 }
 
 #shoesProduct {
@@ -6908,7 +7064,7 @@ header nav .navMenu .divRegister button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 460vh;
+  min-height: 300vh;
 }
 #shoesProduct .title {
   width: 100%;
@@ -6917,15 +7073,26 @@ header nav .navMenu .divRegister button {
   justify-content: center;
   min-height: 150px;
 }
-#shoesProduct .titleSort {
+#shoesProduct .sortSearchByName {
   width: 100%;
-  min-height: 700px;
-  top: 82px;
-  position: absolute;
+  min-height: 120px;
 }
-#shoesProduct .titleSort select {
+#shoesProduct .sortSearchByName #sortSelect {
+  width: 40%;
+  min-height: 40px;
+}
+#shoesProduct .sortSearchByName #sortSelect select {
   width: 100%;
   min-height: 50px;
+}
+#shoesProduct .sortSearchByName .searchByName {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+#shoesProduct .sortSearchByName .searchByName .group {
+  width: 50%;
 }
 #shoesProduct #shoes {
   width: 100%;
@@ -6966,6 +7133,26 @@ header nav .navMenu .divRegister button {
   color: red;
 }
 
+@media screen and (max-width: 767px) {
+  #shoesProduct .searchByName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #shoesProduct .titleSort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #shoesProduct #shoes .shoesBox div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 767px) {
   #shoesProduct #shoes .shoesBox div {
     width: 100%;
@@ -8478,7 +8665,7 @@ header nav .navMenu .divRegister button {
 }
 #location {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8495,12 +8682,35 @@ header nav .navMenu .divRegister button {
   font-weight: 700;
   font-size: 50px;
 }
-#location .shopingImg {
-  width: 100%;
-  min-height: 250px;
+#location .cards {
+  min-height: 400px;
+  margin-bottom: 20px;
 }
-#location .shopingImg img {
+#location .cards img {
   width: 100%;
+}
+#location .cards .cardsText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#location .cards .cardsText h5 {
+  min-height: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: poppins;
+}
+#location .cards .cardsText p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: poppins;
+  width: 80%;
+}
+#location .cards .cardsText a {
+  text-decoration: none;
+  color: rgb(0, 0, 195);
 }
 
 #map {
@@ -8518,6 +8728,832 @@ header nav .navMenu .divRegister button {
 }
 #map .mapCart iframe {
   width: 100%;
+}
+
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.dark-theme {
+  background-color: #000000;
+  color: white;
+}
+body.dark-theme .logoAndSearch .logo .logoImg {
+  display: none;
+}
+body.dark-theme .logoAndSearch .logo .logoText {
+  display: block;
+}
+body.dark-theme nav .navMenu .allMenuList li a {
+  color: #fff;
+}
+body.dark-theme nav .navMenu .allMenuList .designer .list {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .bags .listBags {
+  background-color: #000;
+}
+body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
+  background-color: #000;
+}
+body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText h4 {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText p {
+  color: #fff;
+}
+body.dark-theme #featuretCollection .fashion .fashionText a {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
+  color: #fff;
+}
+body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
+  color: #fff;
+}
+body.dark-theme #discontinuedChanelBags .CollectorGuide p {
+  color: #fff;
+}
+body.dark-theme #shopInPerson .imagesShopInPerson a {
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 21%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#intro .faq-title {
+  padding-top: 40px;
+  font-size: 30px;
+}
+#intro .faq-description {
+  font-size: 19px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  #intro .faq-title {
+    font-size: 20px;
+  }
+  #intro .faq-description {
+    font-size: 19px;
+    padding-top: 15px;
+  }
+}
+#login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+#login .left .title {
+  text-align: center;
+  font-size: 28px;
+}
+#login .left .form {
+  padding-bottom: 1rem;
+}
+#login .left .form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+#login .left .form .form-group .email,
+#login .left .form .form-group .password {
+  width: 50%;
+}
+#login .left .form .form-group .email label,
+#login .left .form .form-group .password label {
+  font-size: 15px;
+  margin-left: 0.5rem;
+  margin-bottom: 5px;
+}
+#login .left .form .form-group .email input,
+#login .left .form .form-group .password input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #cecee2;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 1rem;
+  position: relative;
+  outline: none;
+}
+#login .left .form .form-group .email .hidden,
+#login .left .form .form-group .password .hidden {
+  color: #fd475d;
+  font-size: 12px;
+  float: right;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#login .left .form .form-group .remember {
+  width: 48%;
+}
+#login .left .form .form-group button {
+  margin-top: 1rem;
+  width: 50%;
+  height: 45px;
+  border: 1px solid #cecee2;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+#login .left .form .form-group .reset {
+  margin-top: 1rem;
+  color: #15b2ec;
+}
+#login .right {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+#login .right .login-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .right .login-image-wrap .login-image {
+  width: 100%;
+}
+#login .right .text {
+  margin-top: 2rem;
+  text-align: center;
+  user-select: none;
+}
+#login .right .text span {
+  font-size: 13px;
+}
+#login .right .text a {
+  margin-left: 0.5rem;
+  color: #15b2ec;
+  font-weight: bold;
+  font-size: 13px;
+}
+#login .right .text a:hover {
+  text-decoration: underline;
 }
 
 footer {

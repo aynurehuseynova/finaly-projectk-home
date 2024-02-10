@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessories</title>
+    <link rel="shortcut icon" href="./assets/images/titleIcon/352554100_1310169503242256_8847968603361116885_n (1).jpg">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -33,7 +34,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12">
                         <div class="control">
                             <ul>
-                                <li><a href="./sell.html">Sell</a></li>
+                                <li><a href="./admin.html">Admin</a></li>
                                 <li><a href="./wishList.html">Wishlist</a></li>
                                 <li><a href="./addToCart.html">Shopping Bag <span id="cartCount">0</span></a></li>
                             </ul>
@@ -72,8 +73,8 @@
                                                 style="color:black;"></i></button></a>
                                 </div>
                                 <div class="btn">
-                                    <a href="./searchByName.html"> <button class="btn btn-outline-secondary"
-                                            type="button" id="button-addon2"><i class="fa-solid fa-location-dot"
+                                    <a href="./location.html"> <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2"><i class="fa-solid fa-location-dot"
                                                 style="color:black;"></i></button></a>
                                 </div>
                             </div>
@@ -495,32 +496,21 @@
             </div>
         </nav>
     </header>
+
     <main>
 
-<section id="accsessoriesCarousel">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner carousel">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./assets/images/accsessoriesPageImg/b3a6d7aa38742280820b8134b7f841c9.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./assets/images/accsessoriesPageImg/engagement-ring-PoetRing.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/accsessoriesPageImg/f45e4c8ec122bc10279c540ffcab4d8c.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</section>
-
+        <section id="accessories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text">
+                            <h1>LATEST COLLECTION <br>
+                                OF NECKLACE</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="acsessuaresProduct">
             <div class="container">
@@ -530,25 +520,32 @@
                             <h1>Accessories</h1>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="titleSort">
-                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                <div class="btn-group" role="group">
-                                    <button style="background-color: #222;border: none;" type="button"
-                                        class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Dropdown
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#" id="sortBtnAZ">A-Z</a></li>
-                                        <li><a class="dropdown-item" href="#" id="sortBtnDefault">Default</a></li>
-                                        <li><a class="dropdown-item" href="#" id="sortBtnZA">Z-A</a></li>
-                                    </ul>
+                    <div class="col-12">
+                        <div class="row sortSearchByName">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                                <div class="titleSort">
+                                    <select id="sortSelect">
+                                        <option value="price">Price</option>
+                                        <option value="priceDesc">Max Price</option>
+                                        <option value="priceAsc">Min Price</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                                <div class="searchByName">
+                                    <div class="input-group group mb-3">
+                                        <input type="text" class="form-control" id="searchInput"
+                                            placeholder="Recipient's username" aria-label="Recipient's username"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12">
                         <div id="products" class="row">
 
                         </div>
@@ -617,14 +614,14 @@
                             <div class="followUs">
                                 <h6>Follow us</h6>
                                 <div class="icon">
-                                    <a
-                                        href="https://www.instagram.com/fashionphile?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://www.facebook.com/fashionphile"><i
+                                    <a href="https://www.instagram.com/fashionphile?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/fashionphile" target="_blank"><i
                                             class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://www.threads.net/@fashionphile"><i
+                                    <a href="https://www.threads.net/@fashionphile" target="_blank"><i
                                             class="fa-brands fa-threads"></i></a>
-                                    <a href="https://pin.it/W2EQKvAw4"><i class="fa-brands fa-pinterest-p"></i></a>
+                                    <a href="https://pin.it/W2EQKvAw4" target="_blank"><i
+                                            class="fa-brands fa-pinterest-p"></i></a>
                                 </div>
                             </div>
                         </div>

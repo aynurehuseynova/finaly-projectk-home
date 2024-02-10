@@ -9,7 +9,7 @@ function displayCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    cartContainer.innerHTML = "<p>Sepetiniz boş.</p>";
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
     return;
   }
 

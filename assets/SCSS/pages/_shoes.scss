@@ -792,26 +792,46 @@ header {
     }
 }
 
-// section carousel
-
-#shoesCarousel{
+#shoesCart {
     width: 100%;
-    .corusel{
-       img{
-         height :800px!important;
-       } 
+    min-height: 400px;
+    align-items: center;
+    display: flex;
+    background-image: url(/assets/images/shoesPageimg/Logo-Joya.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .fontColor {
+        width: 100%;
+        min-height: 400px;
+        background-color: #00000042;
+
+        .text {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                color: #fff;
+                font-family: poppins;
+                line-height: 30px;
+            }
+        }
     }
+
 }
 
 
-
-// section
+// section 2
 #shoesProduct {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 460vh;
+    min-height: 300vh;
 
     .title {
         width: 100%;
@@ -821,17 +841,33 @@ header {
         min-height: 150px;
     }
 
-    .titleSort{
+    .sortSearchByName {
         width: 100%;
-        min-height: 700px;
-        top: 82px;
-        position: absolute;
+        min-height: 120px;
 
-        select{
+        #sortSelect {
+            width: 40%;
+            min-height: 40px;
+
+            select {
+                width: 100%;
+                min-height: 50px;
+            }
+        }
+
+        .searchByName {
             width: 100%;
-            min-height: 50px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+
+            .group {
+                width: 50%;
+            }
         }
     }
+
+
     #shoes {
         width: 100%;
         display: flex;
@@ -882,41 +918,72 @@ header {
 }
 
 
-@media screen and (max-width:767px){
- #shoesProduct{
-    #shoes{
-        .shoesBox{
-            div{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+@media screen and (max-width:767px) {
+    #shoesProduct {
+        .searchByName {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .titleSort{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #shoes {
+            .shoesBox {
+                div {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
- }   
 }
 
 
-@media screen and (max-width:600px){
-    #shoesProduct{
+@media screen and (max-width:767px) {
+    #shoesProduct {
+        #shoes {
+            .shoesBox {
+                div {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #shoesProduct {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-       #shoes{
-  
-           .shoesBox{
-               div{
-                   width: 100%;
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
-               }
-           }
-       }
-    }  
-} 
+
+        #shoes {
+
+            .shoesBox {
+                div {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
 
 
 

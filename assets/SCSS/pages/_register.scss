@@ -55,70 +55,7 @@ body {
                 }
             }
         }
-
-        // section 3
-        #shopByCategory{
-.fasihon{
-    .thirdtSectionText{
-        a{
-            color: #fff;
-        }
-    }
-}
-        }
-
-        // section 4
-        #featuretCollection{
-            .fashion{
-                .fashionText{
-                  h4{
-                    color: #fff;
-                  }
-                    p{
-                        color: #fff;
-                    }
-                    a{
-                        color: #fff;
-                    }
-                }
-            }
-        }
-        // section 5
-        #fifthSection{
-           .shopTheCollection{
-            .fifthSectionText{
-                h5{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-                a{
-                    color: #fff;
-                }
-            }
-           } 
-        }
-        // section 7
-
-        #discontinuedChanelBags{
-            .CollectorGuide{
-                h2{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-        // section 8
-        #shopInPerson{
-            .imagesShopInPerson{
-                a{
-                    color: #fff;
-                }
-            }
-        }
+    
     }
 }
 
@@ -478,7 +415,7 @@ header {
 
                     }
                 }
-           
+
                 .whatchList {
                     &:hover {
                         .list {
@@ -517,7 +454,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left:650px;
+                            left: 650px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -848,38 +785,172 @@ header {
     }
 }
 
-// section
-#form{
+
+
+#register {
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
-   justify-content: center;
-   align-items: center;
-    .singUp{
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/images/registerPage/LP_Hero.jpg);
+
+    .allRegisterForm {
         width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-h1{
-    width: 100%;
-    min-height: 150px;
-    display: flex;
-align-items: center;
-justify-content: center;
-font-family: poppins;
-font-size: 60px;
-font-weight: 600;
-}
-form{
-    width: 100%;
-    background-color: aqua;
-    flex-direction: column;
-}
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            min-height: 90px;
+            font-family: poppins;
+            font-weight: 900;
+            font-size: 50px;
+        }
+
+        #registerForm {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            label {
+                font-size: 15px;
+                font-weight: 400;
+                font-family: poppins;
+                width: 33%;
+            }
+
+            input {
+                border: none;
+                width: 35%;
+                min-height: 45px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 15px;
+                font-family: poppins;
+
+                a {
+                    font-family: poppins;
+                    font-weight: 700;
+                    color: red;
+                    text-decoration: none;
+                }
+            }
+
+            button {
+                width: 220px;
+                min-height: 45px;
+                border: 2px solid black;
+                background-color: transparent;
+                color: #000;
+                font-weight: 700;
+                font-size: 15px;
+                font-family: poppins;
+                transition: .3s all ease;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+
+                }
+            }
+        }
     }
 }
 
+@media screen and (max-width: 900px) {
+    #register {
+        .allRegisterForm {
+            h1 {
+                font-size: 45px;
+            }
 
+            #registerForm {
+                label {
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 12px;
+
+                }
+
+                button {
+                    width: 120px;
+                    min-height: 45px;
+                    font-size: 13px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #register {
+        .allRegisterForm {
+            h1 {
+                font-size: 40px;
+            }
+
+            #registerForm {
+                label {
+                    font-size: 11px;
+                }
+
+                p {
+                    font-size: 11px;
+
+                }
+
+                button {
+                    width: 100px;
+                    min-height: 45px;
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #register {
+        .allRegisterForm {
+            font-size: 35px;
+
+            #registerForm {
+                label {
+                    font-size: 9px;
+                }
+
+                p {
+                    font-size: 9px;
+
+                }
+
+                button {
+                    width: 90px;
+                    min-height: 45px;
+                    font-size: 12px;
+                }
+            }
+
+
+        }
+    }
+}
 
 // footer
 

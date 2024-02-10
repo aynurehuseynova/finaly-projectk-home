@@ -47,7 +47,7 @@ fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable/" + id)
               <p>$${item.price}</p>
               <span class="offer">Do you just love this but it's not the right price for you? Sign up for a discount alert and we'll email you if this item goes on discount.</span>
               <div class= "buttons">
-                <button class="basket" onclick="addToBasket(${item.id},'${item.name}', ${item.price})">SEPETE EKLE</button>
+                <button class="basket" onclick="addToBasket(${item.id},'${item.name}', ${item.price})">ADD TO CART</button>
                 <button onclick="addToWishlist(${item.id},'${item.name}')"><i class="fa-solid fa-heart"></i></button>
               </div>
             </div>
@@ -56,8 +56,8 @@ fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable/" + id)
         `;
   })
   .catch((error) => {
-    console.error("Veri alınırken hata oluştu:", error);
-    productDetailsContainer.innerHTML = "<p>Ürün detayları yüklenirken hata oluştu.</p>";
+    console.error("An error occurred while retrieving data:", error);
+    productDetailsContainer.innerHTML = "<p>An error occurred while loading product details.</p>";
   });
 
 function addToBasket(itemId, itemName, itemPrice) {
@@ -76,7 +76,7 @@ function addToBasket(itemId, itemName, itemPrice) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
-  console.log(`Sepete eklendi: ${itemName}`);
+  console.log(`Added to cart: ${itemName}`);
 }
 
 function addToWishlist(itemId, itemName) {
@@ -84,14 +84,14 @@ function addToWishlist(itemId, itemName) {
   let productItem = wishlist.find(item => item.id === itemId);
 
   if (productItem) {
-    alert("Ürün zaten favorilere ekli!");
+    alert("The product is already added to favorites!");
   } else {
     wishlist.push({
       id: itemId,
       name: itemName
     });
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
-    console.log(`Favorilere eklendi: ${itemName}`);
+    console.log(`Added to favorites: ${itemName}`);
   }
 }
 

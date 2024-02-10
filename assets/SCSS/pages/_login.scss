@@ -4,6 +4,135 @@
     box-sizing: border-box;
 }
 
+//** dark-light mode
+
+body {
+    &.dark-theme {
+        background-color: #000000;
+        color: white;
+
+        .logoAndSearch {
+            .logo {
+                .logoImg {
+                    display: none;
+                }
+
+                .logoText {
+                    display: block;
+                }
+
+            }
+        }
+
+        nav {
+            .navMenu {
+                .allMenuList {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                    }
+
+                    .designer {
+                        .list {
+                            background-color: #000;
+
+                        }
+                    }
+
+                    .bags {
+                        .listBags {
+                            background-color: #000;
+                        }
+                    }
+
+                    .accessoriesList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        // section 3
+        #shopByCategory {
+            .fasihon {
+                .thirdtSectionText {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 4
+        #featuretCollection {
+            .fashion {
+                .fashionText {
+                    h4 {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 5
+        #fifthSection {
+            .shopTheCollection {
+                .fifthSectionText {
+                    h5 {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 7
+
+        #discontinuedChanelBags {
+            .CollectorGuide {
+                h2 {
+                    color: #fff;
+                }
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        // section 8
+        #shopInPerson {
+            .imagesShopInPerson {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// *****\\\\
+
+
 header {
     width: 100%;
 
@@ -198,9 +327,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left: 300px;
-                            z-index: 1;
-
+                            left: 320px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -232,7 +359,6 @@ header {
                     &:hover {
                         .listBags {
                             display: block;
-                            z-index: 1;
                             top: 215px;
                             left: 360px;
                             position: absolute;
@@ -268,7 +394,6 @@ header {
                             display: block;
                             top: 215px;
                             left: 420px;
-                            z-index: 1;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -300,7 +425,6 @@ header {
                     &:hover {
                         .list {
                             display: block;
-                            z-index: 1;
                             top: 215px;
                             left: 420px;
                             position: absolute;
@@ -334,7 +458,6 @@ header {
                     &:hover {
                         .list {
                             display: block;
-                            z-index: 1;
                             top: 215px;
                             left: 540px;
                             position: absolute;
@@ -368,7 +491,6 @@ header {
                     &:hover {
                         .list {
                             display: block;
-                            z-index: 1;
                             top: 215px;
                             left: 500px;
                             position: absolute;
@@ -402,7 +524,6 @@ header {
                     &:hover {
                         .list {
                             display: block;
-                            z-index: 1;
                             top: 215px;
                             left: 650px;
                             position: absolute;
@@ -527,7 +648,6 @@ header {
 
                 .dropdown {
                     display: block;
-                    z-index: 1;
 
                     .dropdown-menu {
                         align-items: center;
@@ -553,7 +673,6 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
-                                    z-index: 1;
                                     top: 215px;
                                     left: 160px;
                                     position: absolute;
@@ -587,7 +706,6 @@ header {
                             &:hover {
                                 .listBags {
                                     display: block;
-                                    z-index: 1;
                                     top: 215px;
                                     left: 360px;
                                     position: absolute;
@@ -621,7 +739,6 @@ header {
                             &:hover {
                                 .list {
                                     display: block;
-                                    z-index: 1;
                                     top: 215px;
                                     left: 420px;
                                     position: absolute;
@@ -739,88 +856,160 @@ header {
     }
 }
 
-
-#location {
+#intro {
     width: 100%;
-    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    .faq-title {
+        padding-top: 40px;
+        font-size: 30px;
+    }
 
-    .headerLocation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        min-height: 170px;
+    .faq-description {
+        font-size: 19px;
+        padding-top: 15px;
+    }
+}
 
-        h1 {
-            font-family: poppins;
-            font-weight: 700;
-            font-size: 50px;
+@media screen and (max-width:400px){
+    #intro {
+        .faq-title {
+            font-size: 20px;
+        }
+    
+        .faq-description {
+            font-size: 19px;
+            padding-top: 15px;
+        }
+    }
+}
+
+#login {
+    // background-color: red;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .left {
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .form {
+            padding-bottom: 1rem;
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+
+                .email,
+                .password {
+                    width: 50%;
+
+                    label {
+                        font-size: 15px;
+                        margin-left: .5rem;
+                        margin-bottom: 5px;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 45px;
+                        border: 1px solid #cecee2;
+                        border-radius: 10px;
+                        padding: 0 10px;
+                        margin-bottom: 1rem;
+                        position: relative;
+                        outline: none;
+                    }
+
+                    .hidden {
+                        color: #fd475d;
+                        font-size: 12px;
+                        float: right;
+                        user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-select: none;
+                    }
+                }
+
+                .remember {
+                    width: 48%;
+                }
+
+                button {
+                    margin-top: 1rem;
+                    width: 50%;
+                    height: 45px;
+                    border: 1px solid #cecee2;
+                    border-radius: 10px;
+                    background-color: black;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+                .reset {
+                    margin-top: 1rem;
+                    color: #15b2ec;
+                }
+            }
         }
     }
 
+    .right {
+        // background-color: #15b2ec;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
 
-    .cards {
-        min-height: 400px;
-        margin-bottom: 20px;
-
-        img {
-            width: 100%;
-        }
-
-        .cardsText {
-            width: 100%;
+        .login-image-wrap {
             display: flex;
-            align-items: start;
             justify-content: center;
-            flex-direction: column;
-            h5{
-                min-height: 30px;
-                font-size: 16px;
-                font-weight:900;
-                font-family: poppins;
-            }
-            p{
-                font-weight: 400;
-                font-size:14px;
-                font-family: poppins;
-                width: 80%;
-            }
+            align-items: center;
 
-            a{
-                text-decoration: none;
-                color:rgb(0, 0, 195);
+            .login-image {
+                width: 100%;
             }
-
         }
-    }
 
-}
+        .text {
+            margin-top: 2rem;
+            text-align: center;
+            user-select: none;
 
-#map {
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            span {
+                font-size: 13px;
+            }
 
-    .mapCart {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+            a {
+                margin-left: .5rem;
+                color: #15b2ec;
+                font-weight: bold;
+                font-size: 13px;
 
-        iframe {
-            width: 100%;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
 
 
-// foolter
+// footer
 
 footer {
     width: 100%;

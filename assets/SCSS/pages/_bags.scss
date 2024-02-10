@@ -157,7 +157,6 @@ header {
                 }
             }
         }
-
     }
 
     .logoAndSearch {
@@ -659,17 +658,22 @@ header {
     }
 }
 
-// section 1
-#bagsCarousel{
+#bag {
     width: 100%;
-    .corusel{
-       img{
-         height :760px!important;
-       } 
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    background-image: url(/assets/images/bagsPageImg/1200x330-LL-Bags.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .text{
+        h1{
+            font-family:poppins;
+            font-size: 40px;
+        }
     }
 }
-
-
 
 // section 2
 #bagProduct {
@@ -677,7 +681,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 450vh;
+    min-height: 320vh;
 
     .title {
         width: 100%;
@@ -687,24 +691,39 @@ header {
         min-height: 150px;
     }
 
-    .titleSort{
+    .sortSearchByName {
         width: 100%;
-        min-height: 700px;
-        top: 82px;
-        position: absolute;
+        min-height: 120px;
 
-        select{
+        #sortSelect {
+            width: 40%;
+            min-height: 40px;
+
+            select {
+                width: 100%;
+                min-height: 50px;
+            }
+        }
+
+        .searchByName {
             width: 100%;
-            min-height: 50px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+
+            .group {
+                width: 50%;
+            }
         }
     }
+
     #product {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .boxDiv {
+        .bagBox {
             div {
                 min-height: 500px;
                 width: 100%;
@@ -742,6 +761,26 @@ header {
 
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:986px) {
+    #bagProduct{
+        .sortSearchByName{
+            .searchByName {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+            }
+            .titleSort{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }

@@ -509,34 +509,59 @@
             </nav>
         </header>
         <main>
-            <section id="register">
+            <section id="intro">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                           <div class="allRegisterForm">
-                        <h1>Register</h1>
-                        <form id="registerForm">
-                            <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
-                            <input type="text" id="name" name="name" required>
-
-                            <label for="email"><i class="fa-regular fa-envelope"></i> Email:</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
-                            <input type="password" id="password" name="password" required>
-                            <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
-                            <input type="password" id="password" name="password" required>
-                           <p>Do you have an account? / <a href="./login.html">Log In</a></p>
-                            <button type="submit">Register</button>
-                        </form>
-                    </div>   
+                    <div class="row ">
+                        <div class="faq-title d-flex justify-content-center">
+                            <b>
+                                Welcome to Fashionphile!</b>
+                        </div>
+                        <div class="faq-description d-flex justify-content-center">
+                            <p>Log In Your Heab!</p>
                         </div>
                     </div>
-                  
                 </div>
             </section>
-
-
+            <section id="login">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 left">
+                            <div class="title">
+                                <b>Log In</b>
+                            </div>
+                            <div class="form">
+                                <form id="myForm" class="form-group">
+                                    <div class="email">
+                                        <label for="Email">Email</label> <br>
+                                        <input type="email" id="Email"> <br>
+                                        <span class="error" style="display: none;font-size: 11px;color:#fd475ded;">Email boş qoyula bilməz</span>
+                                    </div>
+                                    <div class="password">
+                                        <label for="Password">Şifrə</label> <br>
+                                        <input type="password" minlength="5" id="Password"> <br>
+                                        <span class="error" style="display: none;font-size: 11px;color:#fd475ded;" >Şifrə boş qoyula bilməz</span>
+                                    </div>
+                                    <div class="remember">
+                                        <input type="checkbox" id="Remember">
+                                        <label for="Remember">Məni yadda saxla!</label>
+                                    </div>
+                                    <button type="submit">Daxil ol</button>
+                                    <span href="" class="reset" style="cursor: pointer; font-size: 13px; font-weight: 500;">Şifrəni yenilə</span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 right">
+                            <div class="login-image-wrap">
+                                <img src="/assets/images/logInPage/fashionphile-comp-1.jpg" alt="Login Image" class="login-image">
+                            </div>
+                            <div class="text">
+                                <span>Hesabınız yoxdur?</span>
+                                <a href="./registration.html">Qeydiyyatdan keçin!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -640,7 +665,7 @@
                 </div>
             </div>
         </footer>
-        <script src="./assets/js/register.js"></script>
+        <script src="./assets/js/login.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

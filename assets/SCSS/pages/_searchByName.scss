@@ -4,6 +4,172 @@
     box-sizing: border-box;
 }
 
+//** dark-light mode
+
+body {
+    &.dark-theme {
+        background-color: #000000;
+        color: white;
+
+        .logoAndSearch {
+            .logo {
+                .logoImg {
+                    display: none;
+                }
+
+                .logoText {
+                    display: block;
+                }
+
+            }
+        }
+
+        nav {
+            .navMenu {
+                .allMenuList {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                    }
+
+                    .designer {
+                        .list {
+                            background-color: #000;
+
+                        }
+                    }
+
+                    .bags {
+                        .listBags {
+                            background-color: #000;
+                        }
+                    }
+
+                    .accessoriesList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                    .accessoriesList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                    .shoes {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                    .jewelryList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                    .whatchList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+
+                    .saleList {
+                        .list {
+                            background-color: #000;
+                        }
+                    }
+                }
+
+                .divRegister {
+                    button {
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        // section 3
+        #shopByCategory {
+            .fasihon {
+                .thirdtSectionText {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 4
+        #featuretCollection {
+            .fashion {
+                .fashionText {
+                    h4 {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 5
+        #fifthSection {
+            .shopTheCollection {
+                .fifthSectionText {
+                    h5 {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        // section 7
+
+        #discontinuedChanelBags {
+            .CollectorGuide {
+                h2 {
+                    color: #fff;
+                }
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        // section 8
+        #shopInPerson {
+            .imagesShopInPerson {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// *****
+
+
 header {
     width: 100%;
 
@@ -740,85 +906,137 @@ header {
 }
 
 
-#location {
+#searchByName {
     width: 100%;
-    min-height: 700px;
+    min-height: 630vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-
-    .headerLocation {
+    .headerSerchByName {
+        width: 100%;
+        min-height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        min-height: 170px;
-
-        h1 {
+        h1{
             font-family: poppins;
-            font-weight: 700;
             font-size: 50px;
+            font-weight:700;
         }
     }
+    .sortSearchByName {
+        width: 100%;
+        min-height: 120px;
 
+        #sortSelect {
+            width: 40%;
+            min-height: 40px;
 
-    .cards {
-        min-height: 400px;
-        margin-bottom: 20px;
-
-        img {
-            width: 100%;
+            select {
+                width: 100%;
+                min-height: 50px;
+            }
         }
 
-        .cardsText {
+        .searchByName {
             width: 100%;
             display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            h5{
-                min-height: 30px;
-                font-size: 16px;
-                font-weight:900;
-                font-family: poppins;
-            }
-            p{
-                font-weight: 400;
-                font-size:14px;
-                font-family: poppins;
-                width: 80%;
-            }
+            align-items: end;
+            justify-content: end;
 
-            a{
-                text-decoration: none;
-                color:rgb(0, 0, 195);
+            .group {
+                width: 50%;
             }
-
         }
     }
 
-}
 
-#map {
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .mapCart {
+    #allProduct {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        iframe {
+        .boxDivSearch {
+            div {
+                min-height: 500px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h5 {
+                    padding-top: 20px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    font-family: poppins;
+                }
+
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                span {
+                    padding-top: 7px;
+                    font-size: 13px;
+                }
+
+                p {
+                    padding-top: 20px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    color: red;
+
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: red;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    #searchByName {
+        .headerSerchByName{
+h1{
+    font-size:50px;
+}
+        }
+        .sortSearchByName {
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .titleSort {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .searchByName {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }
-
 
 // foolter
 

@@ -80,6 +80,10 @@
                                                     style="color:black;"></i></button></a>
                                     </div>
                                     <div class="btn">
+                                        <a href="./login.html"> <button class="btn btn-outline-secondary"
+                                                type="button" id="button-addon2"><i class="fa-solid fa-user" style="color: black;"></i></button></a>
+                                    </div>
+                                    <div class="btn">
                                         <a href="./searchByName.html"> <button class="btn btn-outline-secondary"
                                                 type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"
                                                     style="color:black;"></i></button></a>
@@ -524,8 +528,9 @@
 
                             <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
                             <input type="password" id="password" name="password" required>
-                            <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
-                            <input type="password" id="password" name="password" required>
+                            <label for="confirmPassword"><i class="fa-solid fa-lock"></i> Confirm Password:</label>
+                            <input type="password" id="confirmPassword" required>
+                            <div class="error" id="passwordError">Passwords do not match</div>
                            <p>Do you have an account? / <a href="./login.html">Log In</a></p>
                             <button type="submit">Register</button>
                         </form>

@@ -1,107 +1,4 @@
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     showSection('users'); // Varsayılan olarak kullanıcıları göster
-//   });
-  
-//   function showSection(sectionId) {
-//     const sections = document.querySelectorAll('.admin-section');
-//     sections.forEach(section => {
-//       section.style.display = 'none';
-//     });
-  
-//     const selectedSection = document.getElementById(sectionId);
-//     if (selectedSection) {
-//       selectedSection.style.display = 'block';
-//       updateSectionData(sectionId);
-//     }
-//   }
-  
-//   function updateSectionData(sectionId) {
-//     // Örneğin, burada bir API'den veri çekme simülasyonu yapalım
-//     switch (sectionId) {
-//       case 'users':
-//         fetchUserData(); // Kullanıcı verilerini güncelle
-//         break;
-//       case 'products':
-//         fetchProductData(); // Ürün verilerini güncelle
-//         break;
-//       case 'orders':
-//         fetchOrderData(); // Sipariş verilerini güncelle
-//         break;
-//       default:
-//         console.error('Geçersiz bölüm IDsi:', sectionId);
-//     }
-//   }
-  
-//   function fetchUserDataFromMockAPI() {
-//     return fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/istifadeci-data')
-//       .then(response => response.json())
-//       .catch(error => {
-//         console.error('API Hatası:', error);
-//         return []; // Hata durumunda boş bir dizi döndürüyoruz
-//       });
-//   }
-  
-//   function fetchUserData() {
-//     const usersTable = document.getElementById('usersTable');
-  
-//     // Kullanıcı verilerini mock API'den çek
-//     fetchUserDataFromMockAPI().then(userData => {
-//       // Tabloyu temizle
-//       usersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>';
-  
-//       // Kullanıcı verilerini tabloya ekle
-//       userData.forEach(user => {
-//         const row = document.createElement('tr');
-//         row.innerHTML = `<td>${user.id}</td><td>${user.name}</td><td>${user.email}</td><td class="delete"><button onclick="deleteUser(${user.id})">Delete</button></td>`;
-//         usersTable.appendChild(row);
-//       });
-//     });
-//   }
-  
-//   function deleteUser(userId) {
-//     // Kullanıcıyı silmek için bir DELETE isteği gönder
-//     fetch(`https://655ddd779f1e1093c59a0b08.mockapi.io/istifadeci-data/${userId}`, {
-//       method: 'DELETE'
-//     })
-//       .then(response => {
-//         if (response.ok) {
-//           console.log(`Kullanıcı (ID: ${userId}) başarıyla silindi.`);
-//           // Kullanıcı silindikten sonra tabloyu güncelle
-//           fetchUserData();
-//         } else {
-//           console.error('Kullanıcı silme hatası:', response.statusText);
-//         }
-//       })
-//       .catch(error => {
-//         console.error('Kullanıcı silme hatası:', error);
-//       });
-//   }
-  
-//   function fetchProductData() {
-//     // Ürün verilerini çekip tabloyu güncelleyen fonksiyon
-//     // Benzer bir şekilde ürün verilerini alabilir ve tabloyu güncelleyebilirsiniz
-//   }
-  
-//   function fetchOrderData() {
-//     // Sipariş verilerini çekip tabloyu güncelleyen fonksiyon
-//     // Benzer bir şekilde sipariş verilerini alabilir ve tabloyu güncelleyebilirsiniz
-//   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-// script.js
 
 document.addEventListener('DOMContentLoaded', function () {
     showSection('users'); // Varsayılan olarak kullanıcıları göster
@@ -304,10 +201,6 @@ function showAddProductForm() {
       });
   }
   
-  // ... (diğer fonksiyonlar)
-  
-  
-
 
   function fetchOrderData() {
     // Sipariş verilerini çekip tabloyu güncelleyen fonksiyon

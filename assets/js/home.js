@@ -42,3 +42,12 @@ if (localStorage.getItem("mode") != "") {
 }
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Sayfa yüklendiğinde local storage'dan kullanıcı adını al
+  const currentUser = localStorage.getItem('currentUser');
+
+  // Kullanıcı adını göster
+  if (currentUser) {
+      document.getElementById('userName').innerText = ` ${currentUser}!`;
+  }
+});

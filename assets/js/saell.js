@@ -47,8 +47,8 @@ fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable/" + id)
               <p>$${item.price}</p>
               <span class="offer">Do you just love this but it's not the right price for you? Sign up for a discount alert and we'll email you if this item goes on discount.</span>
               <div class= "buttons">
-                <button class="basket" onclick="addToBasket(${item.id},'${item.name}', ${item.price})">ADD TO CART</button>
-                <button onclick="addToWishlist(${item.id},'${item.name}')"><i class="fa-solid fa-heart"></i></button>
+                <button class="basket" onclick="addToBasket(${item.id},'${item.name}', ${item.price}, '${item.image}')">ADD TO CART</button>
+                <button onclick="addToWishlist(${item.id},'${item.name}', ${item.price}, '${item.image}')"><i class="fa-solid fa-heart"></i></button>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ fetch("https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable/" + id)
     productDetailsContainer.innerHTML = "<p>An error occurred while loading product details.</p>";
   });
 
-function addToBasket(itemId, itemName, itemPrice) {
+function addToBasket(itemId, itemName, itemPrice,itemImage) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let productItem = cart.find(item => item.id === itemId);
 
@@ -68,6 +68,7 @@ function addToBasket(itemId, itemName, itemPrice) {
     productItem.quantity = (productItem.quantity || 1) + 1;
   } else {
     cart.push({
+      image:itemImage,
       id: itemId,
       name: itemName,
       price: itemPrice,
@@ -79,7 +80,7 @@ function addToBasket(itemId, itemName, itemPrice) {
   console.log(`Added to cart: ${itemName}`);
 }
 
-function addToWishlist(itemId, itemName) {
+function addToWishlist(itemId, itemName,itemPrice,itemImage) {
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   let productItem = wishlist.find(item => item.id === itemId);
 
@@ -87,8 +88,10 @@ function addToWishlist(itemId, itemName) {
     alert("The product is already added to favorites!");
   } else {
     wishlist.push({
+      image:itemImage,
       id: itemId,
-      name: itemName
+      name: itemName,
+      price: itemPrice,
     });
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
     console.log(`Added to favorites: ${itemName}`);

@@ -4,135 +4,6 @@
     box-sizing: border-box;
 }
 
-//** dark-light mode
-
-body {
-    &.dark-theme {
-        background-color: #000000;
-        color: white;
-
-        .logoAndSearch {
-            .logo {
-                .logoImg {
-                    display: none;
-                }
-
-                .logoText {
-                    display: block;
-                }
-
-            }
-        }
-
-        nav {
-            .navMenu {
-                .allMenuList {
-                    li {
-                        a {
-                            color: #fff;
-                        }
-                    }
-
-                    .designer {
-                        .list {
-                            background-color: #000;
-
-                        }
-                    }
-
-                    .bags {
-                        .listBags {
-                            background-color: #000;
-                        }
-                    }
-
-                    .accessoriesList {
-                        .list {
-                            background-color: #000;
-                        }
-                    }
-
-                }
-            }
-        }
-
-        // section 3
-        #shopByCategory {
-            .fasihon {
-                .thirdtSectionText {
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 4
-        #featuretCollection {
-            .fashion {
-                .fashionText {
-                    h4 {
-                        color: #fff;
-                    }
-
-                    p {
-                        color: #fff;
-                    }
-
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 5
-        #fifthSection {
-            .shopTheCollection {
-                .fifthSectionText {
-                    h5 {
-                        color: #fff;
-                    }
-
-                    p {
-                        color: #fff;
-                    }
-
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        // section 7
-
-        #discontinuedChanelBags {
-            .CollectorGuide {
-                h2 {
-                    color: #fff;
-                }
-
-                p {
-                    color: #fff;
-                }
-            }
-        }
-
-        // section 8
-        #shopInPerson {
-            .imagesShopInPerson {
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-
-// *****\\\\
-
-
 header {
     width: 100%;
 
@@ -887,7 +758,6 @@ header {
 }
 
 #login {
-    // background-color: red;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -968,7 +838,7 @@ header {
     }
 
     .right {
-        // background-color: #15b2ec;
+        
         padding-bottom: 1rem;
         display: flex;
         align-items: center;
@@ -1015,7 +885,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     margin: 0;
 
     form {
@@ -1023,9 +893,7 @@ header {
         max-width: 440px;
         width: 100%;
         padding: 20px;
-        border: 1px solid #ccc;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         label {
             display: block;
@@ -1040,7 +908,7 @@ header {
         }
 
         button {
-            background-color: #4caf50;
+            background-color:black;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -1049,10 +917,9 @@ header {
             margin-top: 30px;
 
             &:hover {
-                background-color: #45a049;
+                background-color:#595959;
             }
         }
-
 
         .error {
             color: red;

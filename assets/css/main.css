@@ -5,77 +5,6 @@
   box-sizing: border-box;
 }
 
-body.dark-theme {
-  background-color: #000000;
-  color: white;
-}
-body.dark-theme .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-theme .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-theme nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-theme nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .shoes .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .jewelryList .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .whatchList .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .saleList .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .divRegister button i {
-  color: white;
-}
-body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText h4 {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText p {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText a {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide p {
-  color: #fff;
-}
-body.dark-theme #shopInPerson .imagesShopInPerson a {
-  color: #fff;
-}
-
 header {
   width: 100%;
 }
@@ -425,29 +354,10 @@ header nav .navMenu .dropdown button {
 header nav .navMenu .dropdown button:hover {
   background-color: white;
 }
-header nav .navMenu .divRegister {
-  width: 70%;
+header nav .navMenu #welcomeMessage {
+  width: 13%;
   display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 10px;
-  padding-right: 20px;
-}
-header nav .navMenu .divRegister #userName {
-  width: 30%;
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-right: 20px;
-}
-header nav .navMenu .divRegister #userName i {
-  font-size: 20px;
-}
-header nav .navMenu .divRegister button {
-  padding: 7px;
-  border-style: none;
-  background-color: transparent;
+  gap: 7px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3463,64 +3373,6 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
-}
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-body.dark-mode .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-mode .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-mode nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-mode nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text h3 {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text a {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h3 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h5 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text p {
-  color: #fff;
-}
-
 header {
   width: 100%;
 }
@@ -4063,6 +3915,79 @@ header nav .navMenu .divRegister button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#addToCart #cart {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+#addToCart #cart .cartDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 0px;
+}
+#addToCart #cart .cartDiv td h6 {
+  font-size: 17px;
+  width: 60%;
+  text-align: center;
+  font-weight: 700;
+  font-family: poppins;
+}
+#addToCart #cart .cartDiv td span {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 18px;
+}
+#addToCart #cart .cartDiv td p {
+  color: red;
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 18px;
+}
+#addToCart #cart .cartDiv td button {
+  margin-right: 20px;
+  font-size: 23px;
+  color: black;
+  background-color: transparent;
+  border-style: none;
+  transition: 0.4s all seas;
+}
+#addToCart #cart .cartDiv td button:hover {
+  color: red;
+}
+#addToCart #cart .cartDiv td img {
+  width: 200px;
+  min-height: 200px;
+}
+#addToCart #cart .totalPrice {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#addToCart #cart .totalPrice p {
+  font-size: 30px;
+  font-family: poppins;
+  color: #000;
+  font-weight: 700;
+}
+#addToCart #cart .totalPrice button {
+  padding: 7px 15px 7px 15px;
+  background-color: #000;
+  color: #fff;
+  font-family: poppins;
+  transition: 0.8s all seas;
+}
+#addToCart #cart .totalPrice button:hover {
+  background-color: red;
+  border-style: none;
 }
 
 footer {
@@ -7303,64 +7228,6 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s, color 0.5s;
-}
-body.dark-mode {
-  background-color: #000;
-  color: #fff;
-}
-body.dark-mode .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-mode .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-mode nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-mode nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-mode nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text h3 {
-  color: #fff;
-}
-body.dark-mode #shopFashionphileImg .attainableLuxuryCuratedForyou .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text h3 {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text p {
-  color: #fff;
-}
-body.dark-mode #theFashionphileLegacy .text a {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h3 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text h5 {
-  color: #fff;
-}
-body.dark-mode #aurPromiseToYou .text p {
-  color: #fff;
-}
-
 header {
   width: 100%;
 }
@@ -7897,6 +7764,62 @@ header nav .navMenu .divRegister button {
     font-size: 10px;
   }
 }
+#addToCarts {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#addToCarts #wishlist {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#addToCarts #wishlist h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  font-family: poppins;
+  font-weight: 600;
+}
+#addToCarts #wishlist .wishlistCart {
+  min-height: 600px;
+}
+#addToCarts #wishlist .wishlistCart img {
+  width: 100%;
+}
+#addToCarts #wishlist .wishlistCart .text {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#addToCarts #wishlist .wishlistCart .text p {
+  font-family: poppins;
+  width: 70%;
+  text-align: center;
+  min-height: 30px;
+}
+#addToCarts #wishlist .wishlistCart .text span {
+  min-height: 40px;
+}
+#addToCarts #wishlist .wishlistCart .text button {
+  font-size: 25px;
+  background-color: transparent;
+  border-style: none;
+  color: #000;
+  transition: 0.5s all seas;
+}
+#addToCarts #wishlist .wishlistCart .text button:hover {
+  color: red;
+}
+
 footer {
   width: 100%;
   min-height: 500px;
@@ -8858,59 +8781,6 @@ footer .footerTexts {
   box-sizing: border-box;
 }
 
-body.dark-theme {
-  background-color: #000000;
-  color: white;
-}
-body.dark-theme .logoAndSearch .logo .logoImg {
-  display: none;
-}
-body.dark-theme .logoAndSearch .logo .logoText {
-  display: block;
-}
-body.dark-theme nav .navMenu .allMenuList li a {
-  color: #fff;
-}
-body.dark-theme nav .navMenu .allMenuList .designer .list {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .bags .listBags {
-  background-color: #000;
-}
-body.dark-theme nav .navMenu .allMenuList .accessoriesList .list {
-  background-color: #000;
-}
-body.dark-theme #shopByCategory .fasihon .thirdtSectionText a {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText h4 {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText p {
-  color: #fff;
-}
-body.dark-theme #featuretCollection .fashion .fashionText a {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText h5 {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText p {
-  color: #fff;
-}
-body.dark-theme #fifthSection .shopTheCollection .fifthSectionText a {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide h2 {
-  color: #fff;
-}
-body.dark-theme #discontinuedChanelBags .CollectorGuide p {
-  color: #fff;
-}
-body.dark-theme #shopInPerson .imagesShopInPerson a {
-  color: #fff;
-}
-
 header {
   width: 100%;
 }
@@ -9579,7 +9449,7 @@ header nav .navMenu .divRegister button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
   margin: 0;
 }
 .form form {
@@ -9587,9 +9457,7 @@ header nav .navMenu .divRegister button {
   max-width: 440px;
   width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .form form label {
   display: block;
@@ -9602,7 +9470,7 @@ header nav .navMenu .divRegister button {
   box-sizing: border-box;
 }
 .form form button {
-  background-color: #4caf50;
+  background-color: black;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -9611,7 +9479,7 @@ header nav .navMenu .divRegister button {
   margin-top: 30px;
 }
 .form form button:hover {
-  background-color: #45a049;
+  background-color: #595959;
 }
 .form form .error {
   color: red;

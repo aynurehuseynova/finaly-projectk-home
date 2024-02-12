@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
     showSection('users'); // Varsayılan olarak kullanıcıları göster
   });
@@ -201,9 +199,107 @@ function showAddProductForm() {
       });
   }
   
-
-  function fetchOrderData() {
-    // Sipariş verilerini çekip tabloyu güncelleyen fonksiyon
-    // Benzer bir şekilde sipariş verilerini alabilir ve tabloyu güncelleyebilirsiniz
-  }
+  // function fetchOrderData() {
+  //   const ordersTable = document.getElementById('ordersTable');
   
+  //   fetchOrderDataFromMockAPI().then(orderData => {
+  //     ordersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Image</th><th>Price</th><th>Quantity</th><th>Total</th></tr>';
+  
+  //     orderData.forEach(order => {
+  //       const row = document.createElement('tr');
+  //       row.innerHTML = `<td>${order.id}</td><td>${order.name}</td><td>${order.image}</td><td>${order.price}</td><td>${order.quantity}</td><td>${order.total}</td>`;
+  //       ordersTable.appendChild(row);
+  //     });
+  //   });
+  // }
+  
+  // function fetchOrderDataFromMockAPI() {
+  //   return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product')
+  //     .then(response => response.json())
+  //     .catch(error => {
+  //       console.error('Sipariş API Hatası:', error);
+  //       return [];
+  //     });
+  // }
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   fetchOrderData();
+  // });
+
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    fetchOrderData();
+});
+
+function fetchOrderData() {
+    const ordersTable = document.getElementById('ordersTable');
+
+    fetchOrderDataFromMockAPI().then(orderData => {
+        ordersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Image</th><th>Price</th><th>Quantity</th><th>Total</th><th>Action</th></tr>';
+
+        orderData.forEach(order => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${order.id}</td><td>${order.name}</td><td>${order.image}</td><td>${order.price}</td><td>${order.quantity}</td><td>${order.total}</td><td>
+                <button class="accept-btn" onclick="processOrder(${order.id}, 'accepted', this)">Siparişi Kabul Et</button>
+                <button class="reject-btn" onclick="processOrder(${order.id}, 'rejected', this)">Siparişi Reddet</button>
+                <button class="prepare-btn" onclick="processOrder(${order.id}, 'preparing', this)">Hazırlanıyor</button>
+            </td>`;
+            ordersTable.appendChild(row);
+
+            // Ekstra: Her bir siparişin içindeki ürünleri kontrol et
+            if (order.items) {
+                order.items.forEach(item => {
+                    console.log(`Ürün ID: ${item.id}, Ad: ${item.name}, Fiyat: ${item.price}, Adet: ${item.quantity}`);
+                });
+            }
+        });
+    });
+}
+
+function processOrder(orderId, status, button) {
+    // Sipariş durumunu güncelle
+    updateOrderStatus(orderId, status).then(() => {
+        // Sipariş durumunu tabloda güncelle
+        updateOrderRowStyle(button, status);
+    });
+}
+
+function updateOrderStatus(orderId, status) {
+    // Burada orderId ve status'u kullanarak siparişi güncelleyebilirsiniz
+    // Örneğin, API'ye güncelleme isteği gönderebilirsiniz
+    // Bu örnek sadece bir Promise döner
+    return new Promise(resolve => {
+        // API isteği burada olmalı
+        // Bu örnek sadece 1 saniye bekler
+        setTimeout(() => {
+            console.log(`Sipariş #${orderId} ${status} durumuna güncellendi.`);
+            resolve();
+        }, 1000);
+    });
+}
+
+function updateOrderRowStyle(button, status) {
+    const row = button.closest('tr');
+    row.style.backgroundColor = getStatusColor(status);
+}
+
+function getStatusColor(status) {
+    switch (status) {
+        case 'accepted':
+            return 'lightgreen';
+        case 'rejected':
+            return 'lightcoral';
+        case 'preparing':
+            return 'lightyellow';
+        default:
+            return '';
+    }
+}
+
+function fetchOrderDataFromMockAPI() {
+    return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product')
+        .then(response => response.json())
+        .catch(error => {
+            console.error('Sipariş API Hatası:', error);
+            return [];
+        });
+}

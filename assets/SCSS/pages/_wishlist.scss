@@ -4,113 +4,6 @@
     box-sizing: border-box;
 }
 
-//** dark-light mode
-body {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.5s, color 0.5s;
-
-    &.dark-mode {
-        background-color: #000;
-        color: #fff;
-        .logoAndSearch {
-            .logo {
-                .logoImg {
-                    display: none;
-                }
-
-                .logoText {
-                    display: block;
-                }
-
-            }
-        }
-
-        nav {
-            .navMenu {
-                .allMenuList {
-                    li {
-                        a {
-                            color: #fff;
-                        }
-                    }
-
-                    .designer {
-                        .list {
-                            background-color: #000;
-
-                        }
-                    }
-
-                    .bags {
-                        .listBags {
-                            background-color: #000;
-                        }
-                    }
-
-                    .accessoriesList {
-                        .list {
-                            background-color: #000;
-                        }
-                    }
-
-                }
-            }
-        }
-        #attainableLuxuryCuratedForyou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-        #shopFashionphileImg{
-            .attainableLuxuryCuratedForyou{
-              .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-              }  
-            }
-        }
-        #theFashionphileLegacy{
-            .text{
-                h3{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-                a{
-                    color: #fff;
-                }
-            }
-        }
-        #aurPromiseToYou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                h5{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-
-// *****\\\\
-
-
 header {
     width: 100%;
 
@@ -284,7 +177,7 @@ header {
             .allMenuList {
                 display: flex;
                 align-items: center;
-                gap:21px;
+                gap: 21px;
                 list-style-type: none;
                 width: 100%;
 
@@ -464,7 +357,7 @@ header {
 
                     }
                 }
-           
+
                 .whatchList {
                     &:hover {
                         .list {
@@ -503,7 +396,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left:650px;
+                            left: 650px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -581,6 +474,7 @@ header {
     }
 
 }
+
 @media screen and (max-width:992px) {
     .logoAndSearch {
         width: 40%;
@@ -833,7 +727,72 @@ header {
     }
 }
 
+#addToCarts {
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    #wishlist {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            font-family: poppins;
+            font-weight: 600;
+
+        }
+
+        .wishlistCart {
+            min-height: 600px;
+
+            img {
+                width: 100%;
+            }
+
+            .text {
+
+                width: 100%;
+                min-height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                p {
+                    font-family: poppins;
+                    width: 70%;
+                    text-align: center;
+                    min-height: 30px;
+                }
+
+                span {
+                    min-height: 40px;
+                }
+
+                button {
+                    font-size: 25px;
+                    background-color: transparent;
+                    border-style: none;
+                    color: #000;
+                    transition: 0.5s all seas;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // footer
 

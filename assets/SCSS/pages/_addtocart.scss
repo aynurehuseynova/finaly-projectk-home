@@ -4,112 +4,6 @@
     box-sizing: border-box;
 }
 
-//** dark-light mode
-body {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.5s, color 0.5s;
-
-    &.dark-mode {
-        background-color: #000;
-        color: #fff;
-        .logoAndSearch {
-            .logo {
-                .logoImg {
-                    display: none;
-                }
-
-                .logoText {
-                    display: block;
-                }
-
-            }
-        }
-
-        nav {
-            .navMenu {
-                .allMenuList {
-                    li {
-                        a {
-                            color: #fff;
-                        }
-                    }
-
-                    .designer {
-                        .list {
-                            background-color: #000;
-
-                        }
-                    }
-
-                    .bags {
-                        .listBags {
-                            background-color: #000;
-                        }
-                    }
-
-                    .accessoriesList {
-                        .list {
-                            background-color: #000;
-                        }
-                    }
-
-                }
-            }
-        }
-        #attainableLuxuryCuratedForyou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-        #shopFashionphileImg{
-            .attainableLuxuryCuratedForyou{
-              .text{
-                h3{
-                    color: #fff;
-                }
-                p{
-                    color: #fff;
-                }
-              }  
-            }
-        }
-        #theFashionphileLegacy{
-            .text{
-                h3{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-                a{
-                    color: #fff;
-                }
-            }
-        }
-        #aurPromiseToYou{
-            .text{
-                h3{
-                    color: #fff;
-                }
-                h5{
-                    color:#fff;
-                }
-                p{
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-
-// *****\\\\
-
 header {
     width: 100%;
 
@@ -463,7 +357,7 @@ header {
 
                     }
                 }
-           
+
                 .whatchList {
                     &:hover {
                         .list {
@@ -502,7 +396,7 @@ header {
                         .list {
                             display: block;
                             top: 215px;
-                            left:650px;
+                            left: 650px;
                             position: absolute;
                             display: flex;
                             align-items: center;
@@ -833,13 +727,94 @@ header {
     }
 }
 
-#addToCart{
+#addToCart {
+
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    #cart {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+
+        .cartDiv {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 0px;
+
+            td {
+                h6{
+                    font-size: 17px;
+                    width: 60%;
+                    text-align: center;
+                    font-weight: 700;
+                font-family: poppins;
+                }
+                span{
+                    font-family: poppins;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                p{
+                    color: red;
+                    font-family: poppins;
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+            button{
+                margin-right: 20px;
+                font-size: 23px;
+                color: black;
+                background-color: transparent;
+                border-style: none;
+                transition:0.4s all seas;
+                &:hover{
+                    color: red;
+                }
+            }
+                img {
+                    width: 200px;
+                    min-height: 200px;
+                }
+            }
+
+        }
+        .totalPrice{
+            width: 100%;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+
+p{
+    font-size: 30px;
+    font-family: poppins;
+    color: #000;
+    font-weight: 700;
+}
+button{
+    padding: 7px 15px 7px 15px;
+    background-color: #000;
+    color: #fff;
+    font-family: poppins;
+    transition: 0.8s all seas;
+    &:hover{
+        background-color: red;
+border-style: none;
+    }
+}
+        }
+    }
 }
 
 // footer

@@ -3930,6 +3930,7 @@ header nav .navMenu .divRegister button {
   justify-content: space-between;
   border: 1px solid black;
   padding: 0px;
+  flex-wrap: wrap;
 }
 #addToCart #cart .cartDiv td h6 {
   font-size: 17px;
@@ -8050,6 +8051,45 @@ footer .footerTexts {
   min-height: 40px;
   width: 50%;
 }
+.body #messagesTable button {
+  background-color: black;
+  padding: 4px 12px 4px 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: poppins;
+}
+.body #responseFormContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+.body #responseFormContainer h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+.body #responseFormContainer #responseForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body #responseFormContainer #responseForm textarea {
+  width: 20%;
+}
+.body #responseFormContainer #responseForm button {
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-family: poppins;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid black;
+}
 
 * {
   padding: 0;
@@ -10321,6 +10361,695 @@ header nav .navMenu .divRegister button {
     justify-content: center;
   }
 }
+footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #000;
+}
+footer .allShopUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .allShopUs .shopUs {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .allShopUs .shopUs h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+footer .allShopUs .shopUs p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+}
+footer .allShopUs .shopUs p:hover {
+  text-decoration: underline;
+}
+footer .allShopUs .shopUs p a {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  text-decoration: none;
+}
+footer .allShopUs .shopUs p a:hover {
+  text-decoration: underline;
+}
+footer .followUs {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .followUs h6 {
+  line-height: 70px;
+  font-size: 19px;
+  color: #fff;
+}
+footer .followUs .icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .followUs .icon i {
+  color: #fff;
+  font-size: 17px;
+}
+footer .followUs .icon i:hover {
+  background-color: #595959;
+  padding: 10px 12px 10px 12px;
+  border-radius: 50%;
+}
+footer .footerImgLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 130px;
+}
+footer .footerText {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+footer .footerText ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer .footerTexts {
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+}
+header .title .findALocation {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .title .findALocation a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .buyNow {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .buyNow a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .title .control {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control .mode {
+  width: 20%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+header .title .control .mode button {
+  background-color: transparent;
+  border-color: white;
+}
+header .title .control .mode button i {
+  color: white;
+  font-size: 18px;
+}
+header .title .control ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+header .title .control ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .title .control ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+header .logoAndSearch {
+  width: 100%;
+  min-height: 100px;
+}
+header .logoAndSearch .logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .logoAndSearch .logo .logoImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logoAndSearch .logo .logoImg img {
+  width: 100%;
+}
+header .logoAndSearch .logo .logoText {
+  display: none;
+}
+header .logoAndSearch .headerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .logoAndSearch .headerIcons .search {
+  width: 46%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn {
+  width: 23%;
+  min-height: 50px;
+  margin-right: 20px;
+}
+header .logoAndSearch .headerIcons .search .btn a {
+  width: 30%;
+  min-height: 50px;
+}
+header .logoAndSearch .headerIcons .search .btn a button {
+  border-radius: 0px;
+  background-color: white;
+  width: 42px;
+  min-height: 42px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+}
+header nav .navMenu .allMenuList {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  list-style-type: none;
+  width: 100%;
+}
+header nav .navMenu .allMenuList li a {
+  line-height: 63px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+header nav .navMenu .allMenuList .designer:hover .list {
+  display: block;
+  top: 215px;
+  left: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .designer .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger {
+  min-height: 400px;
+}
+header nav .navMenu .allMenuList .designer .list .topDesinger ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .bags:hover .listBags {
+  display: block;
+  top: 215px;
+  left: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+header nav .navMenu .allMenuList .bags .listBags {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .bags .listBags .style {
+  padding-top: 20px;
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .bags .listBags .style ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .accessoriesList:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .accessoriesList .list .accessories ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .shoes:hover .list {
+  display: block;
+  top: 215px;
+  left: 420px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .shoes .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes {
+  min-height: 200px;
+}
+header nav .navMenu .allMenuList .shoes .list .allShoes ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .jewelryList:hover .list {
+  display: block;
+  top: 215px;
+  left: 540px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .jewelryList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .jewelryList .list .jewelry ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .whatchList:hover .list {
+  display: block;
+  top: 215px;
+  left: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .whatchList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .whatchList .list .Watches ul {
+  list-style: none;
+}
+header nav .navMenu .allMenuList .saleList:hover .list {
+  display: block;
+  top: 215px;
+  left: 650px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .navMenu .allMenuList .saleList .list {
+  display: flex;
+  display: none;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+}
+header nav .navMenu .allMenuList .saleList .list .sale {
+  min-height: 180px;
+}
+header nav .navMenu .allMenuList .saleList .list .sale ul {
+  list-style: none;
+}
+header nav .navMenu .dropdown {
+  display: none;
+  width: 100%;
+}
+header nav .navMenu .dropdown button {
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 23px;
+}
+header nav .navMenu .dropdown button:hover {
+  background-color: white;
+}
+header nav .navMenu .divRegister {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+header nav .navMenu .divRegister #userName {
+  width: 30%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+header nav .navMenu .divRegister #userName i {
+  font-size: 20px;
+}
+header nav .navMenu .divRegister button {
+  padding: 7px;
+  border-style: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .logoAndSearch {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .logo .logoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoAndSearch .container .headerIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .allMenuList {
+    display: none;
+  }
+  header nav .container .dropdown {
+    display: block;
+  }
+  header nav .container .dropdown .dropdown-menu {
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+  }
+  header nav .container .dropdown .dropdown-menu li a {
+    line-height: 63px;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+  }
+  header nav .container .dropdown .dropdown-menu .designer:hover .list {
+    display: block;
+    top: 215px;
+    left: 160px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .designer .list .topDesinger ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .bags:hover .listBags {
+    display: block;
+    top: 215px;
+    left: 360px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style {
+    padding-top: 20px;
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .bags .listBags .style ul {
+    list-style: none;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList:hover .list {
+    display: block;
+    top: 215px;
+    left: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list {
+    display: flex;
+    display: none;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories {
+    min-height: 400px;
+  }
+  header nav .container .dropdown .dropdown-menu .accessoriesList .list .accessories ul {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow {
+    display: none;
+  }
+  header .title .control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title .findALocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .title .findALocation a {
+    font-size: 12px;
+  }
+  header .title .buyNow a {
+    font-size: 12px;
+  }
+  header .title .control {
+    width: 100%;
+  }
+  header .title .control ul {
+    width: 100%;
+  }
+  header .title .control ul li a {
+    font-size: 10px;
+  }
+}
+#formContact {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+#formContact .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 700px;
+}
+#formContact .container form {
+  display: flex;
+  flex-direction: column;
+}
+#formContact .container form label {
+  margin-bottom: 5px;
+}
+#formContact .container form input,
+#formContact .container form textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#formContact .container form button {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#formContact .container form button:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
 footer {
   width: 100%;
   min-height: 500px;

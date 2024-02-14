@@ -149,55 +149,60 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
 // API ye mehsul post etmek
-
-
 function showAddProductForm() {
-    const addProductForm = document.getElementById('addProductForm');
-    addProductForm.style.display = 'block';
-  
-    const productForm = document.getElementById('productForm');
-    productForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-  
-      const productMarka = document.getElementById('productMarka').value;
-      const productName = document.getElementById('productName').value;
-      const productPrice = document.getElementById('productPrice').value;
-      const productImageInput = document.getElementById('productImage');
-      const productDetails = document.getElementById('productDetails').value;
-      const productCountry = document.getElementById('productCountry').value;
-  
-      // Dosya yükleme işlemini ele al
-      const productImageFile = productImageInput.files[0];
-      const formData = new FormData();
-      formData.append('marka', productMarka);
-      formData.append('name', productName);
-      formData.append('price', productPrice);
-      formData.append('image', productImageFile);
-      formData.append('details', productDetails);
-      formData.append('country', productCountry);
-  
-      addProductToMockAPI(formData);
-  
-      // Formu sıfırla ve gizle
-      productForm.reset();
-      addProductForm.style.display = 'none';
-    });
-  }
-  
-  function addProductToMockAPI(productData) {
-    fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable', {
+  const addProductForm = document.getElementById('addProductForm');
+  addProductForm.style.display = 'block';
+
+  const productForm = document.getElementById('productForm');
+  productForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const productMarka = document.getElementById('productMarka').value;
+    const productName = document.getElementById('productName').value;
+    const productPrice = document.getElementById('productPrice').value;
+    const productImageInput = document.getElementById('productImage');
+    const productDetails = document.getElementById('productDetails').value;
+    const productCountry = document.getElementById('productCountry').value;
+
+    // Dosya yükleme işlemini ele al
+    const productImageFile = productImageInput.files[0];
+    const formData = new FormData();
+    formData.append('marka', productMarka);
+    formData.append('name', productName);
+    formData.append('price', productPrice);
+    formData.append('image', productImageFile);
+    formData.append('details', productDetails);
+    formData.append('country', productCountry);
+
+    addProductToMockAPI(formData);
+
+    // Formu sıfırla ve gizle
+    productForm.reset();
+    addProductForm.style.display = 'none';
+  });
+}
+
+function addProductToMockAPI(productData) {
+  fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable', {
       method: 'POST',
       body: productData
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Yeni ürün başarıyla eklendi:', data);
-        fetchProductData(); // Ekledikten sonra tabloyu güncelle
-      })
-      .catch(error => {
-        console.error('Ürün ekleme hatası:', error);
-      });
-  }
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      return response.json();
+  })
+  .then(data => {
+      console.log('Yeni ürün başarıyla eklendi:', data);
+      fetchProductData(); // Ekledikten sonra tabloyu güncelle
+  })
+  .catch(error => {
+      console.error('Ürün ekleme hatası:', error);
+  });
+}
+
+
   
   // function fetchOrderData() {
   //   const ordersTable = document.getElementById('ordersTable');
@@ -285,11 +290,11 @@ function updateOrderRowStyle(button, status) {
 function getStatusColor(status) {
     switch (status) {
         case 'accepted':
-            return 'lightgreen';
+            return 'green';
         case 'rejected':
-            return 'lightcoral';
+            return 'red';
         case 'preparing':
-            return 'lightyellow';
+            return 'yellow';
         default:
             return '';
     }
@@ -303,3 +308,83 @@ function fetchOrderDataFromMockAPI() {
             return [];
         });
 }
+
+
+
+// // message
+document.addEventListener('DOMContentLoaded', function () {
+  // Mesajları getir ve tabloya ekle
+  fetchMessages();
+});
+
+function fetchMessages() {
+  const messagesTable = document.getElementById('messagesTable');
+
+  fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order')
+    .then(response => response.json())
+    .then(messages => {
+      // Mesajları tabloya ekle
+      displayMessages(messages, messagesTable);
+    })
+    .catch(error => console.error('Mesajlar alınamadı:', error));
+}
+
+function displayMessages(messages, table) {
+  table.innerHTML = '<tr><th>ID</th><th>Name</th><th>Email</th><th>Message</th><th>Action</th></tr>';
+
+  messages.forEach(message => {
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${message.id}</td><td>${message.name}</td><td>${message.email}</td><td>${message.message}</td><td><button onclick="showResponseForm(${message.id})">Reply</button></td>`;
+    table.appendChild(row);
+  });
+}
+
+function showResponseForm(messageId) {
+  // Cevap formunu göster
+  const responseFormContainer = document.getElementById('responseFormContainer');
+  responseFormContainer.style.display = 'block';
+
+  // Cevap formunu submit işlemine hazırla
+  const responseForm = document.getElementById('responseForm');
+  responseForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const responseMessage = document.getElementById('responseMessage').value;
+
+    // Cevabı göndermek için mock API'ye POST isteği gönder
+    sendResponseToAPI(messageId, responseMessage)
+      .then(response => {
+        console.log('Cevap gönderildi:', response);
+        // Cevap gönderildikten sonra tabloya ekle
+        addResponseToTable(messageId, responseMessage);
+      })
+      .catch(error => {
+        console.error('Cevap gönderilemedi:', error);
+      });
+
+    // Cevap formunu sıfırla ve gizle
+    responseForm.reset();
+    responseFormContainer.style.display = 'none';
+  });
+}
+
+function sendResponseToAPI(messageId, responseMessage) {
+  return fetch('', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      messageId: messageId,
+      responseMessage: responseMessage
+    })
+  })
+    .then(response => response.json());
+}
+
+function addResponseToTable(messageId, responseMessage) {
+  const responsesTable = document.getElementById('responsesTable');
+  const row = document.createElement('tr');
+  row.innerHTML = `<td>${messageId}</td><td>${responseMessage}</td>`;
+  responsesTable.appendChild(row);
+}
+

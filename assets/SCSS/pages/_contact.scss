@@ -1,0 +1,903 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+
+    .title {
+        width: 100%;
+        min-height: 40px;
+        background-color: black;
+
+        .findALocation {
+            min-height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            a {
+                font-family: sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .buyNow {
+            min-height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                font-family: sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .control {
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .mode {
+                width: 20%;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin-bottom: 5px;
+
+                button {
+                    background-color: transparent;
+                    border-color: white;
+
+                    i {
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding-top: 10px;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        font-family: sans-serif;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .logoAndSearch {
+        width: 100%;
+        min-height: 100px;
+
+        .logo {
+            width: 100%;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            .logoImg {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .logoText {
+                display: none;
+            }
+
+        }
+
+        .headerIcons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            .search {
+                width: 46%;
+                min-height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-right: 20px;
+
+                .btn {
+                    width: 23%;
+                    min-height: 50px;
+                    margin-right: 20px;
+
+                    a {
+                        width: 30%;
+                        min-height: 50px;
+
+                        button {
+                            border-radius: 0px;
+                            background-color: white;
+                            width: 42px;
+                            min-height: 42px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+        .navMenu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            min-height: 70px;
+
+            .allMenuList {
+                display: flex;
+                align-items: center;
+                gap: 21px;
+                list-style-type: none;
+                width: 100%;
+
+                li {
+                    a {
+                        line-height: 63px;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        ;
+                        text-decoration: none
+                    }
+                }
+
+                .designer {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 320px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 100px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .topDesinger {
+                            min-height: 400px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .bags {
+                    &:hover {
+                        .listBags {
+                            display: block;
+                            top: 215px;
+                            left: 360px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 100px;
+                        }
+                    }
+
+                    .listBags {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .style {
+                            padding-top: 20px;
+                            min-height: 200px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
+
+                .accessoriesList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 420px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .accessories {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .shoes {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 420px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .allShoes {
+                            min-height: 200px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .jewelryList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 540px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .jewelry {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .whatchList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 500px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .Watches {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .saleList {
+                    &:hover {
+                        .list {
+                            display: block;
+                            top: 215px;
+                            left: 650px;
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                        }
+                    }
+
+                    .list {
+                        display: flex;
+                        display: none;
+                        align-items: center;
+                        background-color: white;
+                        padding: 10px;
+                        width: auto;
+
+                        .sale {
+                            min-height: 180px;
+
+                            ul {
+                                list-style: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .dropdown {
+                display: none;
+                width: 100%;
+
+                button {
+                    background-color: white;
+                    border: none;
+                    color: black;
+                    border-radius: 0px;
+                    font-size: 23px;
+
+                    &:hover {
+                        background-color: white;
+                    }
+                }
+            }
+
+            .divRegister {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+                padding-right: 20px;
+
+                #userName {
+                    width: 30%;
+                    gap: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    margin-right: 20px;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+
+                button {
+                    padding: 7px;
+                    border-style: none;
+                    background-color: transparent;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .logoAndSearch {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            .logo {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logoImg {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .headerIcons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        nav {
+            .container {
+                .allMenuList {
+                    display: none;
+                }
+
+                .dropdown {
+                    display: block;
+
+                    .dropdown-menu {
+                        align-items: center;
+                        // gap: 35px;
+                        padding: 15px;
+                        flex-direction: column;
+                        list-style-type: none;
+                        width: 100%;
+
+                        li {
+                            a {
+                                line-height: 63px;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: Metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                ;
+                                text-decoration: none
+                            }
+                        }
+
+                        .designer {
+                            &:hover {
+                                .list {
+                                    display: block;
+                                    top: 215px;
+                                    left: 160px;
+                                    position: absolute;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 100px;
+                                }
+                            }
+
+                            .list {
+                                display: flex;
+                                display: none;
+                                align-items: center;
+                                background-color: white;
+                                padding: 10px;
+                                width: auto;
+
+                                .topDesinger {
+                                    min-height: 400px;
+
+                                    ul {
+                                        list-style: none;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .bags {
+                            &:hover {
+                                .listBags {
+                                    display: block;
+                                    top: 215px;
+                                    left: 360px;
+                                    position: absolute;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 100px;
+                                }
+                            }
+
+                            .listBags {
+                                display: flex;
+                                display: none;
+                                align-items: center;
+                                background-color: white;
+                                padding: 10px;
+                                width: auto;
+
+                                .style {
+                                    padding-top: 20px;
+                                    min-height: 400px;
+
+                                    ul {
+                                        list-style: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .accessoriesList {
+                            &:hover {
+                                .list {
+                                    display: block;
+                                    top: 215px;
+                                    left: 420px;
+                                    position: absolute;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 40px;
+                                }
+                            }
+
+                            .list {
+                                display: flex;
+                                display: none;
+                                align-items: center;
+                                background-color: white;
+                                padding: 10px;
+                                width: auto;
+
+                                .accessories {
+                                    min-height: 400px;
+
+                                    ul {
+                                        list-style: none;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        .title {
+            .findALocation {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .buyNow {
+                display: none;
+            }
+
+            .control {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    header {
+        .title {
+            .findALocation {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .buyNow {
+                a {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    header {
+        .title {
+            .findALocation {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+
+            .buyNow {
+                a {
+                    font-size: 12px;
+                }
+            }
+
+            .control {
+                width: 100%;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#formContact {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 700px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+ 
+           label {
+                margin-bottom: 5px;
+            }
+
+            input,
+            textarea {
+                margin-bottom: 15px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                padding: 10px;
+                background-color: black;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color:rgba(0, 0, 0, 0.637);
+                }
+            }
+        }
+    }
+}
+
+
+// footer
+
+footer {
+    width: 100%;
+    min-height: 500px;
+    background-color: #000;
+
+    .allShopUs {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        .shopUs {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h6 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                line-height: 50px;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                font-size: 14px;
+                color: white;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                a {
+                    width: 100%;
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .followUs {
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h6 {
+            line-height: 70px;
+            font-size: 19px;
+            color: #fff;
+        }
+
+        .icon {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            i {
+                color: #fff;
+                font-size: 17px;
+
+                &:hover {
+                    background-color: #595959;
+                    padding: 10px 12px 10px 12px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .footerImgLogo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        min-height: 130px;
+    }
+
+    .footerText {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+    }
+
+    .footerTexts {
+        width: 90%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+    }
+}

@@ -750,37 +750,43 @@ header {
             justify-content: space-between;
             border: 1px solid black;
             padding: 0px;
+            flex-wrap: wrap;
 
             td {
-                h6{
+                h6 {
                     font-size: 17px;
                     width: 60%;
                     text-align: center;
                     font-weight: 700;
-                font-family: poppins;
+                    font-family: poppins;
                 }
-                span{
+
+                span {
                     font-family: poppins;
                     font-weight: 600;
                     font-size: 18px;
                 }
-                p{
+
+                p {
                     color: red;
                     font-family: poppins;
                     font-weight: 900;
                     font-size: 18px;
                 }
-            button{
-                margin-right: 20px;
-                font-size: 23px;
-                color: black;
-                background-color: transparent;
-                border-style: none;
-                transition:0.4s all seas;
-                &:hover{
-                    color: red;
+
+                button {
+                    margin-right: 20px;
+                    font-size: 23px;
+                    color: black;
+                    background-color: transparent;
+                    border-style: none;
+                    transition: 0.4s all seas;
+
+                    &:hover {
+                        color: red;
+                    }
                 }
-            }
+
                 img {
                     width: 200px;
                     min-height: 200px;
@@ -788,31 +794,34 @@ header {
             }
 
         }
-        .totalPrice{
+
+        .totalPrice {
             width: 100%;
             min-height: 300px;
             display: flex;
             align-items: center;
-            justify-content:center;
+            justify-content: center;
             flex-direction: column;
 
-p{
-    font-size: 30px;
-    font-family: poppins;
-    color: #000;
-    font-weight: 700;
-}
-button{
-    padding: 7px 15px 7px 15px;
-    background-color: #000;
-    color: #fff;
-    font-family: poppins;
-    transition: 0.8s all seas;
-    &:hover{
-        background-color: red;
-border-style: none;
-    }
-}
+            p {
+                font-size: 30px;
+                font-family: poppins;
+                color: #000;
+                font-weight: 700;
+            }
+
+            button {
+                padding: 7px 15px 7px 15px;
+                background-color: #000;
+                color: #fff;
+                font-family: poppins;
+                transition: 0.8s all seas;
+
+                &:hover {
+                    background-color: red;
+                    border-style: none;
+                }
+            }
         }
     }
 }

@@ -29,25 +29,25 @@ loadMore.addEventListener("click",getProduct)
 getProduct()
 
 
-const theme__btn = document.getElementById("theme__btn");
+// const theme__btn = document.getElementById("theme__btn");
 
-theme__btn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
-  localStorage.setItem("mode", document.body.classList);
+// theme__btn.addEventListener("click", function () {
+//   document.body.classList.toggle("dark-theme");
+//   localStorage.setItem("mode", document.body.classList.toString()); // ClassList yerine toString kullanın
 
-});
+// });
 
-if (localStorage.getItem("mode") != "") {
-  document.body.classList.add(localStorage.getItem("mode"));
-}
+// if (localStorage.getItem("mode") !== null) { // Kontrolü güncelle
+//   document.body.classList.add(localStorage.getItem("mode"));
+// }
 
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Sayfa yüklendiğinde local storage'dan kullanıcı adını al
+//   const currentUser = localStorage.getItem('currentUser');
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Sayfa yüklendiğinde local storage'dan kullanıcı adını al
-  const currentUser = localStorage.getItem('currentUser');
-
-  // Kullanıcı adını göster
-  if (currentUser) {
-      document.getElementById('userName').innerText = ` ${currentUser}!`;
-  }
-});
+//   // Kullanıcı adını göster
+//   const userNameElement = document.getElementById('userName');
+//   if (userNameElement && currentUser) { // Kontrolü ekle
+//       userNameElement.innerText = ` ${currentUser}!`;
+//   }
+// });

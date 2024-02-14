@@ -66,7 +66,7 @@ function displayCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    cartContainer.innerHTML = "<p>Sepetiniz boş.</p>";
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
     return;
   }
 
@@ -76,14 +76,13 @@ function displayCart() {
         <tr class="cartDiv col-12">
         <td><img  src="${item.image}" alt="${item.name}"> </td>
          <td><h6>${item.name}</h6></td>
-         <td><span>Adet: ${item.quantity}</span></td>
-        <td><p >Fiyat: $${item.price}</p></td>
+         <td><span>Custom: ${item.quantity}</span></td>
+        <td><p >Price: $${item.price}</p></td>
         <td><button onclick="removeSingleItem(${index})"><i class="fa-regular fa-trash-can"></i></button></td>
           </tr> `).join('')}
         <div class="totalPrice">
-    <p>Toplam: $${calculateTotal(cart)}</p>
-    <button onclick="completeOrder()">Siparişi Tamamla</button>
-    <button onclick="clearCart()">Sepeti Temizle</button>
+    <p>Total: $${calculateTotal(cart)}</p>
+    <button onclick="completeOrder()">Complete the order</button>
     </div>
   </tbody>`;
 }
@@ -92,10 +91,7 @@ function calculateTotal(cart) {
   return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
 }
 
-function clearCart() {
-  localStorage.removeItem("cart");
-  displayCart();
-}
+
 
 function removeSingleItem(index) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -124,7 +120,7 @@ function completeOrder() {
     total: calculateTotal(cart)
   };
 
-  // Siparişi mock API'ye gönder (lütfen 'your_mock_api_url' yerine gerçek URL'yi kullanın)
+  // Siparişi mock API'ye gönder 
   fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product', {
     method: 'POST',
     headers: {

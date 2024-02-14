@@ -1,6 +1,4 @@
 
-
-
 const body = document.querySelector("body");
 const productDetailsContainer = document.getElementById("products");
 

@@ -77,8 +77,9 @@
                                                     style="color:black;"></i></button></a>
                                     </div>
                                     <div class="btn">
-                                        <a href="./login.html"> <button class="btn btn-outline-secondary"
-                                                type="button" id="button-addon2"><i class="fa-solid fa-user" style="color: black;"></i></button></a>
+                                        <a href="./login.html"> <button class="btn btn-outline-secondary" type="button"
+                                                id="button-addon2"><i class="fa-solid fa-user"
+                                                    style="color: black;"></i></button></a>
                                     </div>
                                     <div class="btn">
                                         <a href="./searchByName.html"> <button class="btn btn-outline-secondary"
@@ -162,7 +163,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="bags"><a href="./bagProduct.html">Bags</a>
+                            <li class="bags">
+                                <a href="./bagProduct.html">Bags </a>
                                 <div class="listBags">
                                     <div class="style">
                                         <ul>
@@ -342,7 +344,7 @@
                                     </div>
                                     <div class="sale">
                                         <ul>
-                                            <li> 20% off</li>
+                                            <li>20% off</li>
                                             <li>30% off</li>
                                             <li>Last call</li>
                                     </div>
@@ -510,7 +512,33 @@
             </nav>
         </header>
         <main>
-        
+
+                <div class="container">
+                    <!-- Siparişler Tablosu -->
+                    <section id="orders" class="admin-section">
+                        <h1>Order</h1>
+                        <table id="ordersTable">
+                            <!-- Siparişler tablosu burada doldurulacak -->
+                        </table>
+                    </section>
+                </div>
+
+            <section id="formAdress">
+                <div class="container">
+                    <div id="orderForm" style="display: none;">
+                        <h2>Sipariş Tamamlama Formu</h2>
+                        <form id="completeOrderForm">
+                            <label for="customerName">Adınız Soyadınız:</label>
+                            <input type="text" id="customerName" required><br>
+
+                            <label for="address">Adresiniz:</label>
+                            <textarea id="address" required></textarea><br>
+
+                            <button type="button" onclick="completeOrder()">Tamamla</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -614,7 +642,7 @@
                 </div>
             </div>
         </footer>
-        <script src="./assets/js/login.js"></script>
+        <script src="./assets/js/order.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

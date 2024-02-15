@@ -1,3 +1,9 @@
+let menuicn = document.querySelector(".menuicn"); 
+let nav = document.querySelector(".navcontainer"); 
+
+menuicn.addEventListener("click", () => { 
+	nav.classList.toggle("navclose"); 
+})
 document.addEventListener('DOMContentLoaded', function () {
     showSection('users'); // Varsayılan olarak kullanıcıları göster
   });
@@ -182,8 +188,11 @@ function showAddProductForm() {
   });
 }
 
+
+showAddProductForm()
+
 function addProductToMockAPI(productData) {
-  fetch('https://655ddd779f1e1093c59a0b08.mockapi.io/Faionable', {
+  fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product', {
       method: 'POST',
       body: productData
   })
@@ -201,80 +210,54 @@ function addProductToMockAPI(productData) {
       console.error('Ürün ekleme hatası:', error);
   });
 }
+  
 
 
-  
-  // function fetchOrderData() {
-  //   const ordersTable = document.getElementById('ordersTable');
-  
-  //   fetchOrderDataFromMockAPI().then(orderData => {
-  //     ordersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Image</th><th>Price</th><th>Quantity</th><th>Total</th></tr>';
-  
-  //     orderData.forEach(order => {
-  //       const row = document.createElement('tr');
-  //       row.innerHTML = `<td>${order.id}</td><td>${order.name}</td><td>${order.image}</td><td>${order.price}</td><td>${order.quantity}</td><td>${order.total}</td>`;
-  //       ordersTable.appendChild(row);
-  //     });
-  //   });
-  // }
-  
-  // function fetchOrderDataFromMockAPI() {
-  //   return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product')
-  //     .then(response => response.json())
-  //     .catch(error => {
-  //       console.error('Sipariş API Hatası:', error);
-  //       return [];
-  //     });
-  // }
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   fetchOrderData();
-  // });
 
-  
-  document.addEventListener('DOMContentLoaded', function () {
+
+
+
+// ////////////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
     fetchOrderData();
-});
+}
 
 function fetchOrderData() {
     const ordersTable = document.getElementById('ordersTable');
 
     fetchOrderDataFromMockAPI().then(orderData => {
-        ordersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Image</th><th>Price</th><th>Quantity</th><th>Total</th><th>Action</th></tr>';
-
-        orderData.forEach(order => {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td>${order.id}</td><td>${order.name}</td><td>${order.image}</td><td>${order.price}</td><td>${order.quantity}</td><td>${order.total}</td><td>
-                <button class="accept-btn" onclick="processOrder(${order.id}, 'accepted', this)">Siparişi Kabul Et</button>
-                <button class="reject-btn" onclick="processOrder(${order.id}, 'rejected', this)">Siparişi Reddet</button>
-                <button class="prepare-btn" onclick="processOrder(${order.id}, 'preparing', this)">Hazırlanıyor</button>
-            </td>`;
-            ordersTable.appendChild(row);
-
-            // Ekstra: Her bir siparişin içindeki ürünleri kontrol et
-            if (order.items) {
-                order.items.forEach(item => {
-                    console.log(`Ürün ID: ${item.id}, Ad: ${item.name}, Fiyat: ${item.price}, Adet: ${item.quantity}`);
-                });
-            }
-        });
+        renderOrdersTable(orderData, ordersTable);
     });
 }
 
-function processOrder(orderId, status, button) {
-    // Sipariş durumunu güncelle
-    updateOrderStatus(orderId, status).then(() => {
-        // Sipariş durumunu tabloda güncelle
-        updateOrderRowStyle(button, status);
+function renderOrdersTable(orderData, table) {
+    table.innerHTML = '<tr><th>ID</th><th>Item</th><th>Price</th><th>Quantity</th><th>Total</th></tr>';
+
+    orderData.forEach(order => {
+        const row = createOrderRow(order);
+        table.appendChild(row);
     });
+}
+
+function createOrderRow(order) {
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${order.id}</td><td>${order.items.map(item => `${item.name}`).join('<br>')}</td><td>${order.items.map(item => `${item.price}$`).join('<br>')}</td><td>${order.items.map(item => `${item.quantity}`).join('<br>')}</td><td>${order.total}$</td>
+    </td>`;
+    return row;
+}
+
+function processOrder(button, status) {
+    const orderId = button.getAttribute('data-order-id');
+    updateOrderStatus(orderId, status).then(fetchOrderData);
 }
 
 function updateOrderStatus(orderId, status) {
-    // Burada orderId ve status'u kullanarak siparişi güncelleyebilirsiniz
-    // Örneğin, API'ye güncelleme isteği gönderebilirsiniz
-    // Bu örnek sadece bir Promise döner
     return new Promise(resolve => {
-        // API isteği burada olmalı
-        // Bu örnek sadece 1 saniye bekler
+        // Gerçek bir API isteği burada olmalı
+        // Örneğin, axios veya fetch kullanarak bir PUT isteği gönderilebilir
         setTimeout(() => {
             console.log(`Sipariş #${orderId} ${status} durumuna güncellendi.`);
             resolve();
@@ -282,23 +265,6 @@ function updateOrderStatus(orderId, status) {
     });
 }
 
-function updateOrderRowStyle(button, status) {
-    const row = button.closest('tr');
-    row.style.backgroundColor = getStatusColor(status);
-}
-
-function getStatusColor(status) {
-    switch (status) {
-        case 'accepted':
-            return 'green';
-        case 'rejected':
-            return 'red';
-        case 'preparing':
-            return 'yellow';
-        default:
-            return '';
-    }
-}
 
 function fetchOrderDataFromMockAPI() {
     return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product')
@@ -308,8 +274,88 @@ function fetchOrderDataFromMockAPI() {
             return [];
         });
 }
+// //////////////////////////////////////////////////////////////////////////////////////
 
 
+//   document.addEventListener('DOMContentLoaded', function () {
+//     fetchOrderData();
+// });
+
+// function fetchOrderData() {
+//     const ordersTable = document.getElementById('ordersTable');
+
+//     fetchOrderDataFromMockAPI().then(orderData => {
+//         ordersTable.innerHTML = '<tr><th>ID</th><th>Name</th><th>Image</th><th>Price</th><th>Quantity</th><th>Total</th><th>Action</th></tr>';
+
+//         orderData.forEach(order => {
+//             const row = document.createElement('tr');
+//             row.innerHTML = `<td>${order.id}</td><td>${order.name}</td><td>${order.image}</td><td>${order.price}</td><td>${order.quantity}</td><td>${order.total}</td><td>
+//                 <button class="accept-btn" onclick="processOrder(${order.id}, 'accepted', this)">Siparişi Kabul Et</button>
+//                 <button class="reject-btn" onclick="processOrder(${order.id}, 'rejected', this)">Siparişi Reddet</button>
+//                 <button class="prepare-btn" onclick="processOrder(${order.id}, 'preparing', this)">Hazırlanıyor</button>
+//             </td>`;
+//             ordersTable.appendChild(row);
+
+//             // Ekstra: Her bir siparişin içindeki ürünleri kontrol et
+//             if (order.items) {
+//                 order.items.forEach(item => {
+//                     console.log(`Ürün ID: ${item.id}, Ad: ${item.name}, Fiyat: ${item.price}, Adet: ${item.quantity}`);
+//                 });
+//             }
+//         });
+//     });
+// }
+
+// function processOrder(orderId, status, button) {
+//     // Sipariş durumunu güncelle
+//     updateOrderStatus(orderId, status).then(() => {
+//         // Sipariş durumunu tabloda güncelle
+//         updateOrderRowStyle(button, status);
+//     });
+// }
+
+// function updateOrderStatus(orderId, status) {
+//     // Burada orderId ve status'u kullanarak siparişi güncelleyebilirsiniz
+//     // Örneğin, API'ye güncelleme isteği gönderebilirsiniz
+//     // Bu örnek sadece bir Promise döner
+//     return new Promise(resolve => {
+//         // API isteği burada olmalı
+//         // Bu örnek sadece 1 saniye bekler
+//         setTimeout(() => {
+//             console.log(`Sipariş #${orderId} ${status} durumuna güncellendi.`);
+//             resolve();
+//         }, 1000);
+//     });
+// }
+
+// function updateOrderRowStyle(button, status) {
+//     const row = button.closest('tr');
+//     row.style.backgroundColor = getStatusColor(status);
+// }
+
+// function getStatusColor(status) {
+//     switch (status) {
+//         case 'accepted':
+//             return 'green';
+//         case 'rejected':
+//             return 'red';
+//         case 'preparing':
+//             return 'yellow';
+//         default:
+//             return '';
+//     }
+// }
+
+// function fetchOrderDataFromMockAPI() {
+//     return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order-product')
+//         .then(response => response.json())
+//         .catch(error => {
+//             console.error('Sipariş API Hatası:', error);
+//             return [];
+//         });
+// }
+
+// /////////////////////////////////////////////////////////////////////////////////
 
 // // message
 document.addEventListener('DOMContentLoaded', function () {
@@ -330,11 +376,11 @@ function fetchMessages() {
 }
 
 function displayMessages(messages, table) {
-  table.innerHTML = '<tr><th>ID</th><th>Name</th><th>Email</th><th>Message</th><th>Action</th></tr>';
+  table.innerHTML = '<tr><th>ID</th><th>Name</th><th>Email</th><th>Message</th></tr>';
 
   messages.forEach(message => {
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${message.id}</td><td>${message.name}</td><td>${message.email}</td><td>${message.message}</td><td><button onclick="showResponseForm(${message.id})">Reply</button></td>`;
+    row.innerHTML = `<td>${message.id}</td><td>${message.name}</td><td>${message.email}</td><td>${message.message}</td>`;
     table.appendChild(row);
   });
 }
@@ -367,24 +413,23 @@ function showResponseForm(messageId) {
   });
 }
 
-function sendResponseToAPI(messageId, responseMessage) {
-  return fetch('', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      messageId: messageId,
-      responseMessage: responseMessage
-    })
-  })
-    .then(response => response.json());
-}
+// function sendResponseToAPI(messageId, responseMessage) {
+//   return fetch('https://65c88862a4fbc162e111d4fa.mockapi.io/order', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//       messageId: messageId,
+//       responseMessage: responseMessage
+//     })
+//   })
+//     .then(response => response.json());
+// }
+// function sendResponseToAPI(messageId, responseMessage) {
+//   // İsteği gönderme, sadece console.log ile bildirim yapma
+//   console.log('Cevap gönderildi:', { messageId, responseMessage });
 
-function addResponseToTable(messageId, responseMessage) {
-  const responsesTable = document.getElementById('responsesTable');
-  const row = document.createElement('tr');
-  row.innerHTML = `<td>${messageId}</td><td>${responseMessage}</td>`;
-  responsesTable.appendChild(row);
-}
-
+//   // Promise ile bir şey dönmek yerine, direk resolved promise dönebiliriz
+//   return Promise.resolve();
+// }

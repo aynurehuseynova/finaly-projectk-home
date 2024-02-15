@@ -38,6 +38,8 @@ function checkLoginCredentials(email, password) {
             if (authenticatedUser) {
                 // Giriş bilgileri doğruysa ana sayfaya yönlendir
                 window.location.href = 'home.html';
+                localStorage.setItem("loggedin", JSON.stringify(authenticatedUser))
+
             } else {
                 // Hata mesajı göster veya kayıt sayfasına yönlendir
                 alert('Invalid login information. Please register or check your email/password.');
